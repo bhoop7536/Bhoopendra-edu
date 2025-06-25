@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌍 Geography - Bhoopendra Educational</title>
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #0077b6;
+    }
+    a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+    .card {
+      background-color: #fff3cd;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .subtopics {
+      display: none;
+      margin: 10px 30px;
+      padding: 15px;
+      background-color: #e3f2fd;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .subtopics a {
+      text-decoration: none;
+      color: #003366;
+      display: block;
+      margin: 8px 0;
+    }
+    .subtopics a:hover {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌍 geography</h1>
+
+  <!-- 🌍 Physical Geography Card -->
+  <div class="card" onclick="toggleSubtopics1()">🌍 भौतिक भूगोल (Physical Geography)</div>
+  <div id="subtopics1" class="subtopics">
+    <a href="earth-origin.html" target="_blank">🌎 पृथ्वी की उत्पत्ति और संरचना</a>
+    <a href="interior-earth.html" target="_blank">🌐 पृथ्वी की आंतरिक संरचना</a>
+    <a href="volcano-earthquake.html" target="_blank">🌋 ज्वालामुखी और भूकंप</a>
+    <a href="plate-tectonics.html" target="_blank">🧭 प्लेट टेक्टोनिक्स</a>
+    <a href="landforms.html" target="_blank">🏔️ स्थलरूप / भू-आकृतियाँ</a>
+    <a href="climate-weather.html" target="_blank">🌦️ जलवायु एवं मौसम</a>
+    <a href="oceans-currents.html" target="_blank">🌊 महासागर और समुद्र की धाराएँ</a>
+    <a href="types-rocks.html" target="_blank">🪨 चट्टानों के प्रकार</a>
+    <a href="types-soils.html" target="_blank">🌱 मिट्टी के प्रकार</a>
+    <a href="rivers-lakes.html" target="_blank">🏞️ नदियाँ एवं झीलें</a>
+  </div>
+
+  <!-- 🌍 Indian Geography Card -->
+  <div class="card" onclick="toggleSubtopics2()">भारत का भूगोल (Indian Geography)</div>
+  <div id="subtopics2" class="subtopics">
+    <a href="indian-location.html" target="_blank">📍 भारत की भौगोलिक स्थिति और विस्तार</a>
+    <a href="indian-division.html" target="_blank">🏞️ भौतिक विभाजन: हिमालय, मैदान, पठार, तटवर्ती क्षेत्र</a>
+    <a href="indian-rivers.html" target="_blank">🌊 भारत की नदियाँ (हिमालयी और प्रायद्वीपीय)</a>
+    <a href="indian-monsoon.html" target="_blank">🌧️ मानसून और जलवायु</a>
+    <a href="indian-soil.html" target="_blank">🧪 भारत की मिट्टियाँ और उनके प्रकार</a>
+    <a href="indian-agriculture.html" target="_blank">🚜 कृषि और प्रमुख फसलें</a>
+    <a href="indian-minerals.html" target="_blank">⚒️ खनिज और ऊर्जा संसाधन</a>
+    <a href="indian-industry.html" target="_blank">🏭 उद्योग और परिवहन</a>
+    <a href="indian-population.html" target="_blank">👥 जनसंख्या और जनसांख्यिकी वितरण</a>
+    <a href="indian-states-map.html" target="_blank">🗺️ राज्यवार विशेषताएँ और नक्शा अध्ययन</a>
+  </div>
+
+  <!-- Toggle Scripts -->
+  <script>
+    function toggleSubtopics1() {
+      const subtopics1 = document.getElementById("subtopics1");
+      subtopics1.style.display = subtopics1.style.display === "none" || subtopics1.style.display === "" ? "block" : "none";
+    }
+    function toggleSubtopics2() {
+      const subtopics2 = document.getElementById("subtopics2");
+      subtopics2.style.display = subtopics2.style.display === "none" || subtopics2.style.display === "" ? "block" : "none";
+    }
+  </script>
+
+  <br><a href="index.html">🏠 Home</a>
+
+</body>
+</html>

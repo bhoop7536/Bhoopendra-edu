@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhoopendra Educational</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+    .blinking {
+      color: green;
+      font-size: 50px;
+       font-style: italic;
+      font-weight: bold;
+      animation: blink 5s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+</head>
+<body>
+ 
+
+
+  <header>
+    <h1 style="
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+">
+ <h1> <div class="blinking">📘 Bhoopendra Educational</div></h1>
+</h1>
+
+   <marquee behavior="scroll" direction="left" style="background-color: #00509d; padding: 10px; font-weight: bold; font-size: 20px;">
+  <span style="color: red;">Bright your future</span> 
+  <span style="color: white;"> if you will read and learn</span>
+</marquee>
+
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Geography</a></li>
+        <li><a href="#">Math</a></li>
+        <li><a href="#">Reasoning</a></li>
+        <li><a href="#">English</a></li>
+        <!-- Button or Link -->
+    <button onclick="showContact()">Contact</button>
+    <!-- Hidden Contact Details -->
+    <div id="contactDetails">
+        <h3>Contact Us</h3>
+        <p>Email: bhoopendraeducational@gmail.com</p>
+        <p>Phone: +91-6395518256</p>
+        <p>Address: Bareilly, Uttar Pradesh, India</p>
+    </div>
+
+    <!-- Script -->
+    <script>
+        function showContact() {
+            var contact = document.getElementById("contactDetails");
+            if (contact.style.display === "none") {
+                contact.style.display = "block"; // Show kare
+            } else {
+                contact.style.display = "none"; // Hide kare (toggle)
+            }
+        }
+    </script>
+      </ul>
+    </nav>
+  </header>
+ 
+
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to Bhoopendra Educational</h2>
+      <p>Explore expertly crafted content to boost your knowledge and crack competitive exams. We cover History, Geography, Mathematics, Reasoning, English and more!</p>
+    </section>
+
+    <section class="subjects">
+      
+    <div class="card">
+    <a href="History.html" style="text-decoration: none; color: inherit;"> 📚 history</a>
+</div>
+
+<div class="card">
+    <a href="geography.html" style="text-decoration: none; color: inherit;">🌍 Geography</a>
+</div>
+<div class="card">
+    <a href="current affairs.html" style="text-decoration: none; color: inherit;">🌐 current affairs</a>
+</div>
+<div class="card">
+    <a href="Math.html" style="text-decoration: none; color: inherit;">🧮 Math</a>
+</div>
+<div class="card">
+    <a href="Reasoning.html" style="text-decoration: none; color: inherit;">🧠 Reasoning</a>
+</div>
+<div class="card">
+    <a href="English.html" style="text-decoration: none; color: inherit;"> English</a>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bhoopendra Educational. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
+
+ 
+
