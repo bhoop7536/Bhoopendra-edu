@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subject-Verb Agreement</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #ffffff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      background: #e8f5e9;
+      padding: 15px;
+      border-left: 5px solid #66bb6a;
+      border-radius: 8px;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .definition {
+      background: #fffde7;
+      padding: 15px;
+      border-left: 5px solid #ffeb3b;
+      border-radius: 8px;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .note {
+      background: #ede7f6;
+      border-left: 5px solid #7e57c2;
+      padding: 15px;
+      border-radius: 8px;
+      font-style: italic;
+    }
+  </style>
+   <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2e7d32;
+    }
+
+    h3 {
+      color: #33691e;
+      margin-top: 30px;
+      border-left: 5px solid #81c784;
+      padding-left: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid #c8e6c9;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #66bb6a;
+      color: white;
+    }
+
+    td {
+      background: #e8f5e9;
+    }
+
+    .note {
+      background: #fff9c4;
+      padding: 15px;
+      border-left: 6px solid #fbc02d;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    ul {
+      background: #e0f7fa;
+      padding: 15px;
+      border-radius: 10px;
+      list-style: none;
+      font-size: 16px;
+    }
+
+    ul li::before {
+      content: "✅ ";
+      color: #00796b;
+    }
+  </style>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f8e9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    th, td {
+      border: 1px solid #c8e6c9;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #66bb6a;
+      color: white;
+    }
+
+    td {
+      background-color: #e8f5e9;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        text-align: left;
+      }
+    }
+  </style>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      background: #fff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 25px;
+      padding: 15px;
+      background: #e8f5e9;
+      border-left: 6px solid #66bb6a;
+      border-radius: 10px;
+    }
+
+    .question p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .options label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      background: #dcedc8;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 5px solid #43a047;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .show-btn {
+      margin-top: 10px;
+      background: #66bb6a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .show-btn:hover {
+      background-color: #558b2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Subject-Verb Agreement (कर्ता-क्रिया का मेल)</h1>
+
+    <div class="highlight">
+      📌 <strong>Simple Definition:</strong><br>
+      Singular subject के साथ <strong>singular verb</strong>, और<br>
+      Plural subject के साथ <strong>plural verb</strong> का प्रयोग किया जाता है।
+    </div>
+
+    <div class="definition">
+      <strong>Subject-Verb Agreement</strong> का मतलब है – वाक्य में <strong>Subject (कर्ता)</strong> और <strong>Verb (क्रिया)</strong> के बीच <strong>व्याकरणिक मेल</strong> होना चाहिए।<br><br>
+      यानी कर्ता की संख्या (एकवचन या बहुवचन) के अनुसार क्रिया का रूप भी बदलता है।
+    </div>
+
+    <div class="note">
+      उदाहरण के लिए:<br>
+      👉 She <strong>eats</strong> an apple. (Singular Subject + Singular Verb)<br>
+      👉 They <strong>eat</strong> apples. (Plural Subject + Plural Verb)
+    </div>
+  </div>
+   <div class="container">
+    <h1>✅ Subject-Verb Agreement (कर्ता-क्रिया का मेल)</h1>
+
+    <div class="note">
+      Subject-Verb Agreement का मतलब है – वाक्य में <strong>Subject (कर्ता)</strong> और <strong>Verb (क्रिया)</strong> के बीच <strong>व्याकरणिक मेल</strong> होना चाहिए।<br>
+      <strong>📌 नियम:</strong> Singular subject के साथ <strong>singular verb</strong>, और plural subject के साथ <strong>plural verb</strong> का प्रयोग किया जाता है।
+    </div>
+
+    <h3>🔹 Examples (उदाहरण)</h3>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Verb</th>
+        <th>Sentence</th>
+        <th>हिंदी अर्थ</th>
+      </tr>
+      <tr>
+        <td>He / She / It</td>
+        <td>eats</td>
+        <td>She eats an apple.</td>
+        <td>वह सेब खाती है।</td>
+      </tr>
+      <tr>
+        <td>They / We / You</td>
+        <td>eat</td>
+        <td>They eat apples.</td>
+        <td>वे सेब खाते हैं।</td>
+      </tr>
+      <tr>
+        <td>The boy</td>
+        <td>plays</td>
+        <td>The boy plays cricket.</td>
+        <td>लड़का क्रिकेट खेलता है।</td>
+      </tr>
+      <tr>
+        <td>The boys</td>
+        <td>play</td>
+        <td>The boys play cricket.</td>
+        <td>लड़के क्रिकेट खेलते हैं।</td>
+      </tr>
+    </table>
+
+    <h3>🔸 Basic Rules of Subject-Verb Agreement (मुख्य नियम)</h3>
+    <table>
+      <tr>
+        <th>Rule No.</th>
+        <th>नियम (Rule)</th>
+        <th>उदाहरण</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td>Singular subject → Singular verb</td>
+        <td>She writes a letter.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td>Plural subject → Plural verb</td>
+        <td>They write letters.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td>Two subjects joined by "and" → Plural verb</td>
+        <td>Ram and Shyam are friends.</td>
+      </tr>
+      <tr>
+        <td>4️⃣</td>
+        <td>"or / nor" → Verb agrees with nearest subject</td>
+        <td>Neither Ramesh nor his friends are going.<br>Either my friends or my brother is coming.</td>
+      </tr>
+      <tr>
+        <td>5️⃣</td>
+        <td>Indefinite Pronouns → Singular verb</td>
+        <td>Everyone is happy.</td>
+      </tr>
+      <tr>
+        <td>6️⃣</td>
+        <td>Collective nouns → Singular or plural verb</td>
+        <td>The team is winning.<br>The team are arguing among themselves.</td>
+      </tr>
+      <tr>
+        <td>7️⃣</td>
+        <td>Uncountable nouns → Singular verb</td>
+        <td>Milk is white.</td>
+      </tr>
+    </table>
+
+    <h3>🔹 Common Singular Subjects:</h3>
+    <ul>
+      <li>He, She, It</li>
+      <li>This, That</li>
+      <li>Ram, The dog, The child</li>
+      <li>Anyone, Someone, Nobody, Everybody</li>
+    </ul>
+
+    <div class="note">
+      ✅ इन सभी के साथ <strong>singular verb</strong> लगता है।
+    </div>
+
+    <h3>🔹 Common Plural Subjects:</h3>
+    <ul>
+      <li>I, You, We, They</li>
+      <li>The boys, My friends, Some people</li>
+    </ul>
+
+    <div class="note">
+      ✅ इन सभी के साथ <strong>plural verb</strong> लगता है।
+    </div>
+
+    <h3>❗ ध्यान देने योग्य बातें:</h3>
+    <ul>
+      <li><strong>I</strong> के साथ "am" आता है (I am happy).</li>
+      <li><strong>You</strong> हमेशा plural की तरह व्यवहार करता है (You are good).</li>
+      <li><strong>The number of</strong> के साथ singular verb लगता है: <br>👉 The number of students is increasing.</li>
+    </ul>
+  </div>
+   <div class="container">
+    <h1>✅ Subject-Verb Agreement - 20 Examples</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Verb</th>
+          <th>Sentence</th>
+          <th>हिंदी अर्थ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>He</td><td>runs</td><td>He runs every day.</td><td>वह हर दिन दौड़ता है।</td></tr>
+        <tr><td>They</td><td>run</td><td>They run in the park.</td><td>वे पार्क में दौड़ते हैं।</td></tr>
+        <tr><td>She</td><td>eats</td><td>She eats an apple.</td><td>वह सेब खाती है।</td></tr>
+        <tr><td>We</td><td>eat</td><td>We eat together.</td><td>हम साथ खाते हैं।</td></tr>
+        <tr><td>The boy</td><td>plays</td><td>The boy plays cricket.</td><td>लड़का क्रिकेट खेलता है।</td></tr>
+        <tr><td>The boys</td><td>play</td><td>The boys play cricket.</td><td>लड़के क्रिकेट खेलते हैं।</td></tr>
+        <tr><td>I</td><td>am</td><td>I am happy.</td><td>मैं खुश हूँ।</td></tr>
+        <tr><td>You</td><td>are</td><td>You are intelligent.</td><td>तुम बुद्धिमान हो।</td></tr>
+        <tr><td>It</td><td>is</td><td>It is raining.</td><td>बारिश हो रही है।</td></tr>
+        <tr><td>This book</td><td>belongs</td><td>This book belongs to me.</td><td>यह किताब मेरी है।</td></tr>
+        <tr><td>These books</td><td>belong</td><td>These books belong to you.</td><td>ये किताबें तुम्हारी हैं।</td></tr>
+        <tr><td>Everyone</td><td>is</td><td>Everyone is present.</td><td>हर कोई उपस्थित है।</td></tr>
+        <tr><td>Some people</td><td>are</td><td>Some people are late.</td><td>कुछ लोग देर से हैं।</td></tr>
+        <tr><td>The cat</td><td>sleeps</td><td>The cat sleeps on the bed.</td><td>बिल्ली बिस्तर पर सोती है।</td></tr>
+        <tr><td>The cats</td><td>sleep</td><td>The cats sleep together.</td><td>बिल्लियाँ साथ में सोती हैं।</td></tr>
+        <tr><td>My friend</td><td>likes</td><td>My friend likes music.</td><td>मेरा दोस्त संगीत पसंद करता है।</td></tr>
+        <tr><td>My friends</td><td>like</td><td>My friends like movies.</td><td>मेरे दोस्त फिल्में पसंद करते हैं।</td></tr>
+        <tr><td>The team</td><td>is</td><td>The team is winning.</td><td>टीम जीत रही है।</td></tr>
+        <tr><td>The players</td><td>are</td><td>The players are excited.</td><td>खिलाड़ी उत्साहित हैं।</td></tr>
+        <tr><td>Milk</td><td>is</td><td>Milk is white.</td><td>दूध सफेद होता है।</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <body>
+  <div class="container">
+    <h2>📘 Subject-Verb Agreement Quiz – 20 Questions</h2>
+    <div id="quiz-container"></div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        q: "1. She ___ tea every morning.",
+        options: ["drink", "drinks", "drinking", "drank"],
+        answer: "drinks"
+      },
+      {
+        q: "2. They ___ to school by bus.",
+        options: ["go", "goes", "gone", "going"],
+        answer: "go"
+      },
+      {
+        q: "3. The boy ___ well in class.",
+        options: ["perform", "performs", "performed", "performing"],
+        answer: "performs"
+      },
+      {
+        q: "4. I ___ happy today.",
+        options: ["is", "am", "are", "was"],
+        answer: "am"
+      },
+      {
+        q: "5. You ___ very kind.",
+        options: ["is", "are", "am", "being"],
+        answer: "are"
+      },
+      {
+        q: "6. He ___ a book now.",
+        options: ["reads", "read", "reading", "is reading"],
+        answer: "is reading"
+      },
+      {
+        q: "7. The dogs ___ loudly.",
+        options: ["barks", "barking", "bark", "barked"],
+        answer: "bark"
+      },
+      {
+        q: "8. Ram and Shyam ___ playing cricket.",
+        options: ["is", "are", "was", "has"],
+        answer: "are"
+      },
+      {
+        q: "9. Neither Rohan nor his friends ___ present.",
+        options: ["is", "was", "are", "being"],
+        answer: "are"
+      },
+      {
+        q: "10. Either you or he ___ wrong.",
+        options: ["are", "is", "am", "be"],
+        answer: "is"
+      },
+      {
+        q: "11. Everyone ___ to be respected.",
+        options: ["want", "wants", "wanted", "wanting"],
+        answer: "wants"
+      },
+      {
+        q: "12. Some people ___ always late.",
+        options: ["is", "was", "are", "has"],
+        answer: "are"
+      },
+      {
+        q: "13. The girl ___ very fast.",
+        options: ["runs", "run", "ran", "running"],
+        answer: "runs"
+      },
+      {
+        q: "14. The students ___ their homework daily.",
+        options: ["does", "do", "done", "doing"],
+        answer: "do"
+      },
+      {
+        q: "15. Water ___ at 100°C.",
+        options: ["boils", "boil", "boiled", "boiling"],
+        answer: "boils"
+      },
+      {
+        q: "16. The number of cases ___ increasing.",
+        options: ["are", "is", "was", "be"],
+        answer: "is"
+      },
+      {
+        q: "17. Ten rupees ___ not enough.",
+        options: ["is", "are", "were", "being"],
+        answer: "is"
+      },
+      {
+        q: "18. The police ___ investigating the case.",
+        options: ["is", "are", "was", "has"],
+        answer: "are"
+      },
+      {
+        q: "19. Mathematics ___ my favorite subject.",
+        options: ["is", "are", "were", "has"],
+        answer: "is"
+      },
+      {
+        q: "20. My friend and I ___ going to the market.",
+        options: ["is", "am", "are", "was"],
+        answer: "are"
+      }
+    ];
+
+    const container = document.getElementById('quiz-container');
+
+    questions.forEach((item, index) => {
+      const div = document.createElement('div');
+      div.className = 'question';
+
+      const optionsHtml = item.options.map(option =>
+        `<label><input type="radio" name="q${index}"> ${option}</label>`
+      ).join("");
+
+      div.innerHTML = `
+        <p>${item.q}</p>
+        <div class="options">${optionsHtml}</div>
+        <button class="show-btn" onclick="toggleAnswer(${index})">Show Answer</button>
+        <div class="answer" id="ans-${index}">✔️ Correct Answer: <strong>${item.answer}</strong></div>
+      `;
+
+      container.appendChild(div);
+    });
+
+    function toggleAnswer(i) {
+      const ans = document.getElementById('ans-' + i);
+      ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <a href="grammar.html">BACK</a>
+</body>
+</body>
+</html>
