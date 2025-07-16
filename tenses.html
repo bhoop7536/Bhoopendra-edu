@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tense (काल) - हिन्दी व्याकरण</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid #ffcc00;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+    </style>
+     <title>Present Tense Subparts Table</title>
+  <style>
+    /* ✅ केवल इस टेबल पर CSS लागू होगी */
+    .present-tense-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .present-tense-table th,
+    .present-tense-table td {
+      border: 2px solid #dcdcdc;
+      padding: 30px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    .present-tense-table th {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    .present-tense-table tr:nth-child(even) {
+      background-color: #f0f8ff;
+    }
+
+    .present-tense-table .highlight {
+      font-weight: bold;
+      color: #2980b9;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+   <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: blue;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: red;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #dcdcdc;
+      padding: 15px;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: blue;
+    }
+    tr:nth-child(even) {
+      background-color: blue;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+  </style>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+
+    .question-card {
+      background-color:lightgreen;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      color: BLACK;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .options li {
+      list-style-type: none;
+      padding: 5px 0;
+    }
+
+    .show-btn {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #007bff;
+      color:  ;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color:RED;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        button.textContent = "Show Answer";
+      } else {
+        answer.style.display = "block";
+        button.textContent = "Hide Answer";
+      }
+    }
+  </script>
+
+</head>
+<body style="background-image: url('ff.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+    <div class="container">
+        <h1>📘 Tense (काल)</h1>
+        <div class="highlight">
+            <p style="color: black;">
+                <strong>काल (Tense)</strong> वह <u>व्याकरणिक (grammatical)</u> रूप है जो किसी <b>क्रिया (verb)</b> के समय को दर्शाता है — 
+                यानी <b>क्रिया कब हुई है</b>: 
+                <span style="color: gray;">भूतकाल (Past)</span>, 
+                <span style="color: #90ee90;">वर्तमानकाल (Present)</span> 
+                या 
+                <span style="color: #ffa07a;">भविष्यकाल (Future)</span>।
+            </p>
+               <p style="color: grey;">
+                <strong>Tense</strong> is the grammatical form of a verb that shows the 
+                <u>time of an action or event</u> — whether it <span style="color:#007BFF;">happened in the past</span>, 
+                <span style="color:green;">is happening in the present</span>, 
+                or <span style="color:orange;">will happen in the future</span>.
+            </p>
+            <table border="1" cellpadding="10" cellspacing="0"
+ style="border-collapse: collapse; text-align: center; min-height: 450px; background-color: lightgreen; margin: auto;">
+
+  <caption style="font-weight: bold; margin-bottom: 20px; width: 700px;"><h1>✅ पहचान की Trick (Quick Hint)</h1></caption>
+  <thead style="background-color: red;">
+    <tr>
+
+      <th>Tense</th>
+      <th>पहचान शब्द</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><span style="color: red;">Present</span></strong></td>
+      <td><span style="color: blue;">-ता हूँ, -ती है, रहा हूँ, चुका हूँ</span></td>
+      
+    </tr>
+    <tr>
+      <td><strong><span style="color: red;">Past</span></strong></td>
+      <td><span style="color: red;">- ता था, रही थी, चुका था</span></td>
+    </tr>
+    <tr>
+      <td><strong><span style="color: red;">Future</span></strong></td>
+      <td><span style="color: blue;">-गा, -गी, रहा होऊँगा, चुका होऊँगा</span></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+  <h2>✅ Present Tense के चारों उपभेद (Subparts)</h2>
+
+  <table class="present-tense-table">
+    <thead>
+      <tr>
+        <th>काल का प्रकार (Subpart)</th>
+        <th>Structure (संरचना)</th>
+        <th>Example (उदाहरण)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="highlight">1. Simple Present (Indefinite)</span></td>
+        <td><span style="color: red;">Subject + V1 / V1 + s/es+object.</span></td>
+        <td><span style="color: red;">He eats an apple.<br>वह एक सेब खाता है।</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">2. Present Continuous</span></td>
+        <td><span style="color: red;">Subject + is/am/are + V1 + ing+object.</span></td>
+        <td><span style="color: red;">She is reading a book.<br>वह एक किताब पढ़ रही है।</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">3. Present Perfect</span></td>
+        <td><span style="color: red;">Subject + has/have + V3+object.</span></td>
+        <td><span style="color: red;">I have written a letter.<br>मैंने एक पत्र लिखा है।</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">4. Present Perfect Continuous</span></td>
+        <td><span style="color: red;">Subject + has/have been + V1 + ing +sin/for + time + object.</span></td>
+        <td><span style="color: red;"> She has been working here since 2020.<br>वह 2020 से यहाँ काम कर रही है।</span></td>
+      </tr>
+    </tbody>
+  </table>
+   <h2>✅ Past Tense के चारों उपभेद (Subparts)</h2>
+
+  <table class="present-tense-table">
+    <thead>
+      <tr>
+        <th>काल का प्रकार (Subpart)</th>
+        <th>Structure (संरचना)</th>
+        <th>Example (उदाहरण)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="highlight">1. Simple Past (Indefinite)</span></td>
+        <td><span style="color: red;">Subject + V2nd +object.</span></td>
+        <td><span style="color: red;">He ate an apple.<br>वह एक सेब खाता था</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">2. Past Continuous</span></td>
+        <td><span style="color: red;">Subject + was/were + V1 + ing + object</span></td>
+        <td><span style="color: red;">She was reading a book.<br>वह एक किताब पढ़ रही थी</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">3. Past Perfect</span></td>
+        <td><span style="color: red;">Subject + had + V3 +object.</span></td>
+        <td><span style="color: red;">They had eaten the food .<br>बे खाना खा चुके थे </span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">4. Past Perfect Continuous</span></td>
+        <td><span style="color: red;">Subject + had been + V1 + ing + since/for + object.</span></td>
+        <td><span style="color: red;">I had been studying for 2 hours..<br> मैं 2 घंटे से पढ़ाई कर रहा था।</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>✅ Future Tense के चारों उपभेद (Subparts)</h2>
+
+  <table class="present-tense-table">
+    <thead>
+      <tr>
+        <th>काल का प्रकार (Subpart)</th>
+        <th>Structure (संरचना)</th>
+        <th>Example (उदाहरण)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="highlight">1. Future Past (Indefinite)</span></td>
+        <td><span style="color: red;">Subject + will/shall+ 1st form +object.</span></td>
+        <td><span style="color: red;">He will eat an apple.<br>वह एक सेब खाता होगा </span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">2. Future Continuous</span></td>
+        <td><span style="color: red;">Subject + will be/shall be + V1 + ing + object</span></td>
+        <td><span style="color: red;">She was reading a book.<br>वह एक किताब पढ़ रही होगी </span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">3. Future Perfect</span></td>
+        <td><span style="color: red;">Subject + will have/shall have + V3 +object.</span></td>
+        <td><span style="color: red;">They had eaten the food .<br>बे खाना खा चुके होगे</span></td>
+      </tr>
+      <tr>
+        <td><span class="highlight">4. Future Perfect Continuous</span></td>
+        <td><span style="color: red;">Subject + will have been/shall have been + V1 + ing + since/for +time +object.</span></td>
+        <td><span style="color: red;">They will have been waiting for the bus for 30 minutes.<br>वे 30 मिनट से बस का इंतज़ार कर रहे होंगे।</span></td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+        <h2> importent notes </h2>
+  <h2>📘 Since vs For की पहचान (Pahechan in Table)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>बिंदु</th>
+        <th><span class="highlight">Since</span></th>
+        <th><span class="highlight">For</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>प्रश्न पूछने का तरीका</td>
+        <td>कब से? (When?)</td>
+        <td>कितने समय से? (How long?)</td>
+      </tr>
+      <tr>
+        <td>समय का प्रकार</td>
+        <td>सटीक समय (Point of Time)</td>
+        <td>समय की अवधि (Duration of Time)</td>
+      </tr>
+      <tr>
+        <td>उपयोग</td>
+        <td>जब कोई निश्चित दिन, तारीख़, या समय दिया हो</td>
+        <td>जब समय की मात्रा या अवधि बतानी हो</td>
+      </tr>
+      <tr>
+        <td>उदाहरण समय</td>
+        <td>since 2010, since Monday, since 8 AM</td>
+        <td>for 2 hours, for 5 years, for a long time</td>
+      </tr>
+      <tr>
+        <td>वाक्य उदाहरण</td>
+        <td>He has been working <strong>since 2015</strong>.</td>
+        <td>She has been waiting <strong>for 3 hours</strong>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> Sub tense के चार भाग होते है जिस्मे ह्म tense के चार और भागो को दिखाते है जिस्मे हम उनके और चार भागों को दिखाते हैं। </p>
+  <table>
+    <thead>
+    <th style="background-color: lightblue; color: darkblue; font-weight: bold;">
+      affarmative 
+    </th>
+    <th style="background-color: lightgreen; color: darkblue; font-weight: bold;">
+      negative
+    </th>
+    <th style="background-color: lightcoral; color: darkblue; font-weight: bold;">introgative</th>
+    <th style="background-color: lightblack; color: darkblue; font-weight: bold;">introgative + negative</th>
+  </thead>
+  <tbody>
+    <tbody>
+      <td style="background-color: lightgreen; color: black;"> Affirmative के अंदर हम Tense के Simple Tenses को रखते हैं</td>
+      <td style="background-color: lightblue; color: black;">Negative के अंदर नकारात्मक शब्दों को रखते हैं जो 'नहीं' या 'ना' से शुरू होते हैं"</td>
+      <td>"Interrogative के अंदर हम उन वाक्यों को रखते हैं जो प्रश्न बनाते हैं जैसे क्यों, कब, कैसे, क्या आदि"</td>
+      <td style="background-color: lightpink; color: black;">"Interrogative + Negative में वे Tense रखते हैं जिनमें 'नहीं' भी आता है और प्रश्न भी बनता है"</td>
+    </tbody>
+  </tbody>
+  </table>
+  <p  style="color: BLUE; font-family: Arial; font-size: 18px;"><strong>आइए अब हम सभी कालों (Tense) के सूत्रों (Formulas) के बारे में जानते हैं कि कैसे और कहाँ क्या लगाया जाता है। तब हमें और आसान तरीके से समझ आएगा कि Tenses में कहाँ, क्या और कैसे लगाया जाता है</strong></p>
+       
+    </div>
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; font-family: Arial;">
+  <tr style="background-color: #f2f2f2; font-weight: bold;">
+    <th>📌 वाक्य प्रकार</th>
+    <th>स्ट्रक्चर</th>
+    <th>उदाहरण</th>
+  </tr>
+  <h1> PRESENT INDIFINITE TENSE</h1>
+  <tr>
+    <td>Affirmative (सकारात्मक)</td>
+    <td>Subject + V1 + s/es + Object</td>
+    <td>He eats food. (वह खाना खाता है।)</td>
+  </tr>
+  <tr>
+    <td>Negative (नकारात्मक)</td>
+    <td>Subject + do/does not + V1 + Object</td>
+    <td>He does not eat food.</td>
+  </tr>
+  <tr>
+    <td>Interrogative (प्रश्नवाचक)</td>
+    <td>Do/Does + Subject + V1 + Object + ?</td>
+    <td>Does he eat food?</td>
+  </tr>
+  <tr>
+    <td>Interrogative + Negative</td>
+    <td>Do/Does + Subject + not + V1 + Object + ?</td>
+    <td>Does he not eat food?</td>
+  </tr>
+</table>
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; font-family: Arial; width: 100%;">
+  <tr style="background-color: #d1e7dd; font-weight: bold;">
+    <th>📌 वाक्य प्रकार</th>
+    <th>स्ट्रक्चर</th>
+    <th>उदाहरण</th>
+  </tr>
+  <h1> PRESENT CONTINOUS </h1>
+  <tr>
+    <td>Affirmative (सकारात्मक)</td>
+    <td>Subject + is/am/are + V1 + ing + Object</td>
+    <td>She is dancing. (वह नाच रही है।)</td>
+  </tr>
+  <tr>
+    <td>Negative (नकारात्मक)</td>
+    <td>Subject + is/am/are + not + V1 + ing + Object</td>
+    <td>She is not dancing.</td>
+  </tr>
+  <tr>
+    <td>Interrogative (प्रश्नवाचक)</td>
+    <td>Is/Am/Are + Subject + V1 + ing + Object + ?</td>
+    <td>Is she dancing?</td>
+  </tr>
+  <tr>
+    <td>Interrogative + Negative</td>
+    <td>Is/Am/Are + Subject + not + V1 + ing + Object + ?</td>
+    <td>Is she not dancing?</td>
+  </tr>
+</table>
+<table border="1" cellspacing="0" cellpadding="10">
+  <thead style="background-color: #b3d9ff;">
+    <tr>
+      <th>वाक्य प्रकार (Type)</th>
+      <th>Structure (रचना)</th>
+      <th>Example (वाक्य)</th>
+      <th>हिंदी अनुवाद</th>
+    </tr>
+  </thead>
+  <h1 style=" background-color: green;"> present perfect tense </h1>
+  <tbody>
+    <tr>
+      <td>✅ Affirmative (सकारात्मक)</td>
+      <td>Subject + has/have + V3</td>
+      <td>He has eaten lunch.</td>
+      <td>उसने दोपहर का खाना खा लिया है।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative (नकारात्मक)</td>
+      <td>Subject + has/have + not + V3</td>
+      <td>She has not finished homework.</td>
+      <td>उसने होमवर्क पूरा नहीं किया है।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative (प्रश्नवाचक)</td>
+      <td>Has/Have + Subject + V3?</td>
+      <td>Have they arrived?</td>
+      <td>क्या वे आ चुके हैं?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative (प्रश्नवाचक + नकारात्मक)</td>
+      <td>Has/Have + Subject + not + V3?</td>
+      <td>Has he not gone yet?</td>
+      <td>क्या वह अभी तक नहीं गया है?</td>
+    </tr>
+  </tbody>
+</table>
+<div style="background-color:#f0f8ff; padding:15px; border-left:6px solid #3399ff; border-radius:10px; font-family:'Segoe UI', sans-serif; margin-top:20px;">
+  <h3 style="color:#1a75ff; margin-bottom:10px;">📝 Notes:</h3>
+  <ul style="margin:0; padding-left:20px; line-height:1.8;">
+    <li style="font-size:16px; color:#333;"><strong>He, She, It</strong>, कोई नाम (जैसे: Ravi, Neha) = <strong>has</strong></li>
+    <li style="font-size:16px; color:#333;"><strong>I, You, We, They</strong> = <strong>have</strong></li>
+    <li style="font-size:16px; color:#333;">Verb हमेशा <strong>V3 (past participle)</strong> form में होगी (जैसे: <em>eaten, gone, written</em> आदि)</li>
+  </ul>
+</div>
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif;">
+  <thead style="background-color:#d5eaf5;">
+    <tr>
+      <th style="text-align:left;">वाक्य प्रकार (Type)</th>
+      <th style="text-align:left;">Structure (रचना)</th>
+      <th style="text-align:left;">Example (वाक्य)</th>
+      <th style="text-align:left;">हिंदी अनुवाद</th>
+    </tr>
+  </thead>
+  <h1 style="background-color:green;">PRESENT PERFECT CONTINOUS TENSE</h1>
+  <tbody>
+    <tr>
+      <td>✅ Affirmative (सकारात्मक)</td>
+      <td>Subject + has/have been + V1 + ing + Object + since/for + time</td>
+      <td>He has been reading a book for two hours.</td>
+      <td>वह दो घंटे से एक किताब पढ़ रहा है।</td>
+    </tr>
+    <tr >
+      <td>❌ Negative (नकारात्मक)</td>
+      <td>Subject + has/have not been + V1 + ing + Object + since/for + time</td>
+      <td>She has not been working since morning.</td>
+      <td>वह सुबह से काम नहीं कर रही है।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative (प्रश्नवाचक)</td>
+      <td>Has/Have + Subject + been + V1 + ing + Object + since/for + time?</td>
+      <td>Have you been studying since 5 AM?</td>
+      <td>क्या तुम सुबह 5 बजे से पढ़ाई कर रहे हो?</td>
+    </tr>
+    <tr style="background-color:# lightgreen;">
+      <td>❓❌ Interrogative + Negative (प्रश्नवाचक + नकारात्मक)</td>
+      <td>Has/Have + Subject + not been + V1 + ing + Object + since/for + time?</td>
+      <td>Has he not been coming to class for a week?</td>
+      <td>क्या वह एक हफ्ते से कक्षा में नहीं आ रहा है?</td>
+    </tr>
+  </tbody>
+</table>
+<div style="background-color:#f0f8ff; padding:15px; border-left:6px solid #3399ff; border-radius:10px; font-family:'Segoe UI', sans-serif; margin-top:20px;">
+  <h3 style="color:#1a75ff; margin-bottom:10px;">📝 Notes (टिप्पणियाँ):</h3>
+  <ul style="margin:0; padding-left:20px; line-height:1.8;">
+    <li style="font-size:16px; color:#333;"><strong>Has</strong> = He, She, It, कोई एक नाम (जैसे Ravi, Neha)</li>
+    <li style="font-size:16px; color:#333;"><strong>Have</strong> = I, You, We, They</li>
+    <li style="font-size:16px; color:#333;">इसमें <strong>been</strong> हमेशा आता है</li>
+    <li style="font-size:16px; color:#333;">क्रिया (Verb) में <strong>V1 + ing</strong> का प्रयोग होता है</li>
+  </ul>
+</div>
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+  <thead style="background-color: #f9d5ec;">
+    <tr>
+      <th>Tense</th>
+      <th>Type</th>
+      <th>Structure</th>
+      <th>Example</th>
+      <th>हिंदी अनुवाद</th>
+    </tr>
+  </thead>
+  <tbody>
+<h1 style="background-color:lightgreen; color: BLACK; "> PAST TENSE  के SUB PART</h1>
+    <!-- Past Indefinite -->
+    <tr style="background-color:lightblue;  ">
+      <td rowspan="4"  style="color: black;"><strong>Past Indefinite</strong><br>(Simple Past)</td>
+      <td  style="color: black;" >✅ Affirmative</td>
+      <td  style="color: black;">Subject + V2 + Object</td>
+      <td   style="color: black;">He played football.</td>
+      <td  style="color: black;">उसने फुटबॉल खेला।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + did not + V1 + Object</td>
+      <td>He did not play football.</td>
+      <td>उसने फुटबॉल नहीं खेला।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Did + Subject + V1 + Object?</td>
+      <td>Did he play football?</td>
+      <td>क्या उसने फुटबॉल खेला?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Did + Subject + not + V1 + Object?</td>
+      <td>Did he not play football?</td>
+      <td>क्या उसने फुटबॉल नहीं खेला?</td>
+    </tr>
+
+    <!-- Past Continuous -->
+    <tr style="background-color:lightblue;">
+      <td rowspan="4"><strong>Past Continuous</strong></td>
+      <td>✅ Affirmative</td>
+      <td>Subject + was/were + V1 + ing + Object</td>
+      <td>He was playing football.</td>
+      <td>वह फुटबॉल खेल रहा था।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + was/were + not + V1 + ing + Object</td>
+      <td>He was not playing football.</td>
+      <td>वह फुटबॉल नहीं खेल रहा था।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Was/Were + Subject + V1 + ing + Object?</td>
+      <td>Was he playing football?</td>
+      <td>क्या वह फुटबॉल खेल रहा था?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Was/Were + Subject + not + V1 + ing + Object?</td>
+      <td>Was he not playing football?</td>
+      <td>क्या वह फुटबॉल नहीं खेल रहा था?</td>
+    </tr>
+
+    <!-- Past Perfect -->
+    <tr style="background-color: lightgreen;">
+      <td rowspan="4"><strong>Past Perfect</strong></td>
+      <td>✅ Affirmative</td>
+      <td>Subject + had + V3 + Object</td>
+      <td>He had played football.</td>
+      <td>उसने फुटबॉल खेल लिया था।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + had not + V3 + Object</td>
+      <td>He had not played football.</td>
+      <td>उसने फुटबॉल नहीं खेला था।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Had + Subject + V3 + Object?</td>
+      <td>Had he played football?</td>
+      <td>क्या उसने फुटबॉल खेल लिया था?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Had + Subject + not + V3 + Object?</td>
+      <td>Had he not played football?</td>
+      <td>क्या उसने फुटबॉल नहीं खेला था?</td>
+    </tr>
+
+    <!-- Past Perfect Continuous -->
+    <tr style="background-color: lightgreen;">
+      <td rowspan="4"><strong>Past Perfect Continuous</strong></td>
+      <td>✅ Affirmative</td>
+      <td>Subject + had been + V1 + ing + Object + since/for + time</td>
+      <td>He had been playing football for an hour.</td>
+      <td>वह एक घंटे से फुटबॉल खेल रहा था।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + had not been + V1 + ing + Object + since/for + time</td>
+      <td>He had not been playing football since morning.</td>
+      <td>वह सुबह से फुटबॉल नहीं खेल रहा था।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Had + Subject + been + V1 + ing + Object + since/for + time?</td>
+      <td>Had he been playing football since morning?</td>
+      <td>क्या वह सुबह से फुटबॉल खेल रहा था?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Had + Subject + not been + V1 + ing + Object + since/for + time?</td>
+      <td>Had he not been playing football for two hours?</td>
+      <td>क्या वह दो घंटे से फुटबॉल नहीं खेल रहा था?</td>
+    </tr>
+
+  </tbody>
+</table>
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+  <thead style="background-color: #d0f0fd;">
+    <tr>
+      <th>Tense</th>
+      <th>Type</th>
+      <th>Structure</th>
+      <th>Example</th>
+      <th>हिंदी अनुवाद</th>
+    </tr>
+    <H1> FUTURE TENSE के SUB PART</H1>
+  </thead>
+  <tbody>
+
+    <!-- Future Indefinite -->
+    <tr style="background-color: OCCEAN skyblue; ">
+      <td rowspan="4"><strong>Future Indefinite</strong><br>(साधारण भविष्य काल)</td>
+      <td>✅ Affirmative</td>
+      <td>Subject + will + V1 + Object</td>
+      <td>He will eat food.</td>
+      <td>वह खाना खाएगा।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + will not + V1 + Object</td>
+      <td>He will not eat food.</td>
+      <td>वह खाना नहीं खाएगा।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Will + Subject + V1 + Object?</td>
+      <td>Will he eat food?</td>
+      <td>क्या वह खाना खाएगा?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Will + Subject + not + V1 + Object?</td>
+      <td>Will he not eat food?</td>
+      <td>क्या वह खाना नहीं खाएगा?</td>
+    </tr>
+
+    <!-- Future Continuous -->
+    <tr style="background-color: lightpink;">
+      <td rowspan="4"><strong>Future Continuous</strong><br>(चालू भविष्य काल)</td>
+      <td>✅ Affirmative</td>
+      <td>Subject + will be + V1 + ing + Object</td>
+      <td>She will be reading a book.</td>
+      <td>वह एक किताब पढ़ रही होगी।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + will not be + V1 + ing + Object</td>
+      <td>She will not be reading a book.</td>
+      <td>वह एक किताब नहीं पढ़ रही होगी।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Will + Subject + be + V1 + ing + Object?</td>
+      <td>Will she be reading a book?</td>
+      <td>क्या वह एक किताब पढ़ रही होगी?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Will + Subject + not be + V1 + ing + Object?</td>
+      <td>Will she not be reading a book?</td>
+      <td>क्या वह एक किताब नहीं पढ़ रही होगी?</td>
+    </tr>
+
+    <!-- Future Perfect -->
+    <tr style="background-color: lightblack;">
+      <td rowspan="4" style="color:BLACK"><strong>Future Perfect</strong><br>(पूर्ण भविष्य काल)</td>
+      <td>✅ Affirmative</td>
+      <td>Subject + will have + V3 + Object</td>
+      <td>They will have finished the work.</td>
+      <td>वे काम पूरा कर चुके होंगे।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + will not have + V3 + Object</td>
+      <td>They will not have finished the work.</td>
+      <td>वे काम पूरा नहीं कर चुके होंगे।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Will + Subject + have + V3 + Object?</td>
+      <td>Will they have finished the work?</td>
+      <td>क्या वे काम पूरा कर चुके होंगे?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Will + Subject + not have + V3 + Object?</td>
+      <td>Will they not have finished the work?</td>
+      <td>क्या वे काम पूरा नहीं कर चुके होंगे?</td>
+    </tr>
+
+    <!-- Future Perfect Continuous -->
+    <tr style="background-color: #d9eaf7;color: BLACK; ">
+      <td rowspan="4"><strong>Future Perfect Continuous</strong><br>(परिपूर्ण चालू भविष्य काल)</td>
+      <td>✅ Affirmative</td>
+      <td>Subject + will have been + V1 + ing + Object + since/for + time</td>
+      <td>He will have been working for 5 hours.</td>
+      <td>वह पाँच घंटे से काम कर रहा होगा।</td>
+    </tr>
+    <tr>
+      <td>❌ Negative</td>
+      <td>Subject + will not have been + V1 + ing + Object + since/for + time</td>
+      <td>He will not have been working for 5 hours.</td>
+      <td>वह पाँच घंटे से काम नहीं कर रहा होगा।</td>
+    </tr>
+    <tr>
+      <td>❓ Interrogative</td>
+      <td>Will + Subject + have been + V1 + ing + Object + since/for + time?</td>
+      <td>Will he have been working for 5 hours?</td>
+      <td>क्या वह पाँच घंटे से काम कर रहा होगा?</td>
+    </tr>
+    <tr>
+      <td>❓❌ Interrogative + Negative</td>
+      <td>Will + Subject + not have been + V1 + ing + Object + since/for + time?</td>
+      <td>Will he not have been working for 5 hours?</td>
+      <td>क्या वह पाँच घंटे से काम नहीं कर रहा होगा?</td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+<h2 style="background-color: YELLOW;  padding: 10px; margin-bottom: 20px; width: 500px;text-align: center; "> Practice question and check you ability</h2>
+
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">1. When I ________ the school, the bus had left.</div>
+    <ul class="options">
+      <li>A. Reached </li>
+      <li>B. Reach</li>
+      <li>C. Reaching</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. Reached</div>
+  </div>
+<!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">2. I _______ go to Delhi tomorrow.</div>
+    <ul class="options">
+      <li>A. will</li>
+      <li>B. shall</li>
+      <li>C. had</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. will</div>
+  </div>
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">3.I have _____the food..</div>
+    <ul class="options">
+      <li>A. eat</li>
+      <li>B. eaten </li>
+      <li>C. ate</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A.eaten</div>
+  </div>
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">4.I will be ______ at this time tomorrow.</div>
+    <ul class="options">
+      <li>A. studies</li>
+      <li>B. study </li>
+      <li>C. studying</li>
+      <li>D. no improvement </li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A.studying</div>
+  </div>
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">5.We ___  the work already. </div>
+    <ul class="options">
+      <li>A. has complete</li>
+      <li>B. have complete</li>
+      <li>C. have completed </li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A.have completed </div>
+  </div>
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">6. She had ______ to dheli.</div>
+    <ul class="options">
+      <li>A. go</li>
+      <li>B. goes </li>
+      <li>C. gone</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. at</div>
+  </div>
+<!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">7.It has been __________continuously for the past three hours.</div>
+    <ul class="options">
+      <li>A. rain</li>
+      <li>B. raining  </li>
+      <li>C. rains </li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. raining </div>
+  </div>
+  <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">8. He had already left when I _______the station..</div>
+    <ul class="options">
+      <li>A. reached </li>
+      <li>B. reachs</li>
+      <li>C. reach</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A.reached </div>
+  </div>
+    <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">9. By next year, she ________ completed her Ph.D..</div>
+    <ul class="options">
+      <li>A. shall have</li>
+      <li>B. will </li>
+      <li>C. will have</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. at</div>
+  </div>
+    <!-- ✅ Quiz Card -->
+  <div class="question-card"  style="margin-top: 40px;">
+    <div class="question">10.By the time he arrives, I will have already _______ my work..</div>
+    <ul class="options">
+      <li>A. finish</li>
+      <li>B. finishing </li>
+      <li>C. finished</li>
+      <li>D. no improvement</li>
+    </ul>
+    <button class="show-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">✅ Correct Answer: A. finished</div>
+  </div>
+ <div style="text-align: left;">
+  <a href="grammar.html" style="margin: 0 15px;">Back</a>
+  <a href="index.html" style="margin: 0 15px;">Home</a>
+</div>
+<h4 style="color:purple;"> Thanks for watching</h4>
+
+ <footer>
+            © 2025 BhoopendraEducational.com | Hindi Grammar Series
+        </footer>
+
+</body>
+</html>
