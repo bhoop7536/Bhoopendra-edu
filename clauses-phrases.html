@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clauses vs Phrases</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e0f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #00695c;
+      margin-top: 30px;
+      border-left: 5px solid #26a69a;
+      padding-left: 15px;
+    }
+
+    .definition, .examples {
+      margin-bottom: 20px;
+    }
+
+    .examples ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .examples ul li {
+      background: #e0f2f1;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-left: 5px solid #009688;
+      border-radius: 8px;
+    }
+
+    .note {
+      background: #fff3e0;
+      padding: 15px;
+      border-left: 5px solid #ff9800;
+      border-radius: 8px;
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+   <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e8f5e9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #a5d6a7;
+      padding: 12px 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #66bb6a;
+      color: white;
+      font-size: 18px;
+    }
+
+    td {
+      background-color: #f1f8e9;
+      font-size: 16px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #33691e;
+      border-left: 5px solid #81c784;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    ul {
+      background: #e0f2f1;
+      padding: 15px;
+      border-radius: 10px;
+      list-style: none;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .note {
+      background: #fff3e0;
+      padding: 15px;
+      border-left: 5px solid #ff9800;
+      border-radius: 8px;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
+   <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f8e9;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #a5d6a7;
+      padding: 12px 15px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #66bb6a;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    td {
+      background-color: #e8f5e9;
+    }
+
+    .note {
+      background: #fff3e0;
+      border-left: 6px solid #ff9800;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #1b5e20;
+      border-left: 5px solid #81c784;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #33691e;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #e8f5e9;
+      border-left: 5px solid #66bb6a;
+      border-radius: 10px;
+    }
+
+    .question p {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    .answer {
+      display: none;
+      background: #dcedc8;
+      padding: 10px;
+      border-left: 4px solid #43a047;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
+    .show-btn {
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .show-btn:hover {
+      background-color: #558b2f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Clauses और Phrases</h1>
+
+  <h2>🔶 Phrase (शब्द समूह)</h2>
+  <div class="definition">
+    📌 <strong>परिभाषा:</strong> Phrase वह शब्दों का समूह होता है जो मिलकर एक अर्थ तो देता है लेकिन उसमें <strong>subject</strong> और <strong>finite verb</strong> नहीं होते। Phrase अपूर्ण वाक्य होता है।
+  </div>
+  <div class="examples">
+    🔹 <strong>उदाहरण:</strong>
+    <ul>
+      <li>in the morning – सुबह में</li>
+      <li>after the rain – बारिश के बाद</li>
+      <li>a bunch of flowers – फूलों का गुच्छा</li>
+      <li>with a smile – मुस्कान के साथ</li>
+    </ul>
+  </div>
+  <div class="note">
+    👉 ये सभी शब्द समूह हैं, लेकिन इनमें कोई स्पष्ट subject या finite verb नहीं है, इसलिए इन्हें Phrase कहा जाता है।
+  </div>
+
+  <h2>🔷 Clause (उपवाक्य)</h2>
+  <div class="definition">
+    📌 <strong>परिभाषा:</strong> Clause वह शब्द समूह होता है जिसमें कम से कम एक <strong>subject</strong> और एक <strong>finite verb</strong> होता है। यह कभी-कभी पूर्ण वाक्य भी हो सकता है या फिर मुख्य वाक्य का भाग भी हो सकता है।
+  </div>
+  <div class="examples">
+    🔹 <strong>उदाहरण:</strong>
+    <ul>
+      <li>She is singing. (वह गा रही है)</li>
+      <li>When she came (जब वह आई)</li>
+      <li>I know that he is honest.</li>
+    </ul>
+    <ul>
+      <li>I know → (Main Clause)</li>
+      <li>that he is honest → (Subordinate Clause)</li>
+    </ul>
+  </div>
+
+  <div class="footer-note">
+    यह जानकारी आपकी शिक्षा को और भी मज़बूत बनाएगी 😊
+  </div>
+</div>
+<div class="container">
+    <h2>✅ Phrase और Clause का अंतर</h2>
+
+    <table>
+      <tr>
+        <th>विशेषता</th>
+        <th>Phrase</th>
+        <th>Clause</th>
+      </tr>
+      <tr>
+        <td>Subject</td>
+        <td>❌ नहीं होता</td>
+        <td>✅ होता है</td>
+      </tr>
+      <tr>
+        <td>Verb (Finite)</td>
+        <td>❌ नहीं होता</td>
+        <td>✅ होता है</td>
+      </tr>
+      <tr>
+        <td>अर्थ</td>
+        <td>आंशिक अर्थ देता है</td>
+        <td>स्पष्ट या आंशिक अर्थ</td>
+      </tr>
+      <tr>
+        <td>वाक्य का हिस्सा</td>
+        <td>वाक्य का भाग</td>
+        <td>वाक्य या उपवाक्य हो सकता है</td>
+      </tr>
+      <tr>
+        <td>उदाहरण</td>
+        <td>in the park, a beautiful girl</td>
+        <td>because he was late, I saw her</td>
+      </tr>
+    </table>
+
+    <div class="section-title">🔰 Clauses के प्रकार (Types of Clauses)</div>
+    <ul>
+      <li><strong>Independent Clause (Main Clause)</strong><br>
+      👉 जो अपने आप में एक पूरा वाक्य हो सकता है।<br>
+      📌 <em>Example: I love pizza.</em></li>
+
+      <li><strong>Dependent Clause (Subordinate Clause)</strong><br>
+      👉 जो अकेले पूर्ण अर्थ नहीं देता, इसे Main Clause की ज़रूरत होती है।<br>
+      📌 <em>Example: because it was raining</em></li>
+    </ul>
+
+    <div class="section-title">📌 Subordinate Clauses further divided into:</div>
+    <ul>
+      <li><strong>Noun Clause</strong> – <em>What he said was true.</em></li>
+      <li><strong>Adjective Clause</strong> – <em>The girl who is singing is my sister.</em></li>
+      <li><strong>Adverb Clause</strong> – <em>I will call you when I reach home.</em></li>
+    </ul>
+
+    <div class="note">
+      यह तालिका आपको Phrase और Clause के बीच का अंतर और उनके प्रकार समझने में मदद करेगी।
+    </div>
+  </div>
+   <div class="container">
+    <h2>🔶 10 Examples of Phrases (शब्द समूह)</h2>
+    
+    <table>
+      <tr>
+        <th>🔢</th>
+        <th>Phrase</th>
+        <th>हिंदी अर्थ</th>
+      </tr>
+      <tr><td>1️⃣</td><td>in the morning</td><td>सुबह में</td></tr>
+      <tr><td>2️⃣</td><td>under the table</td><td>मेज़ के नीचे</td></tr>
+      <tr><td>3️⃣</td><td>a bunch of flowers</td><td>फूलों का गुच्छा</td></tr>
+      <tr><td>4️⃣</td><td>without any reason</td><td>बिना किसी कारण के</td></tr>
+      <tr><td>5️⃣</td><td>in a hurry</td><td>जल्दी में</td></tr>
+      <tr><td>6️⃣</td><td>by the river</td><td>नदी के पास</td></tr>
+      <tr><td>7️⃣</td><td>at the station</td><td>स्टेशन पर</td></tr>
+      <tr><td>8️⃣</td><td>of great importance</td><td>बहुत महत्वपूर्ण</td></tr>
+      <tr><td>9️⃣</td><td>with a smile</td><td>मुस्कान के साथ</td></tr>
+      <tr><td>🔟</td><td>after the class</td><td>कक्षा के बाद</td></tr>
+    </table>
+
+    <div class="note">🟢 <strong>नोट:</strong> इनमें subject और finite verb नहीं होता, ये सिर्फ वाक्य के हिस्से होते हैं।</div>
+
+    <h2>🔷 10 Examples of Clauses (उपवाक्य)</h2>
+
+    <table>
+      <tr>
+        <th>🔢</th>
+        <th>Clause</th>
+        <th>हिंदी अर्थ</th>
+      </tr>
+      <tr><td>1️⃣</td><td>She is singing.</td><td>वह गा रही है</td></tr>
+      <tr><td>2️⃣</td><td>When he came</td><td>जब वह आया</td></tr>
+      <tr><td>3️⃣</td><td>I know that she is honest.</td><td>मैं जानता हूँ कि वह ईमानदार है</td></tr>
+      <tr><td>4️⃣</td><td>Because I was late</td><td>क्योंकि मैं देर से आया</td></tr>
+      <tr><td>5️⃣</td><td>Although he tried</td><td>हालांकि उसने कोशिश की</td></tr>
+      <tr><td>6️⃣</td><td>He ran fast because he was scared.</td><td>वह तेज़ दौड़ा क्योंकि वह डर गया था</td></tr>
+      <tr><td>7️⃣</td><td>What she said was true.</td><td>उसने जो कहा वह सच था</td></tr>
+      <tr><td>8️⃣</td><td>The boy who won the race is my friend.</td><td>दौड़ जीतने वाला लड़का मेरा दोस्त है</td></tr>
+      <tr><td>9️⃣</td><td>I will help you if you ask me.</td><td>मैं तुम्हारी मदद करूँगा अगर तुम मुझसे कहो</td></tr>
+      <tr><td>🔟</td><td>Since it is raining, stay inside.</td><td>क्योंकि बारिश हो रही है, अंदर रहो</td></tr>
+    </table>
+
+    <div class="note">🟢 <strong>नोट:</strong> इनमें subject और verb होता है, इसलिए ये clause होते हैं।</div>
+  </div>
+   <div class="container">
+    <h2>🔍 Phrase vs Clause Quiz – 30 Questions</h2>
+
+    <div id="quiz-container"></div>
+  </div>
+
+  <script>
+    const questions = [
+      { q: "in the morning", a: "Phrase" },
+      { q: "She was crying", a: "Clause" },
+      { q: "under the tree", a: "Phrase" },
+      { q: "because he was tired", a: "Clause" },
+      { q: "a piece of cake", a: "Phrase" },
+      { q: "when the bell rang", a: "Clause" },
+      { q: "with a heavy bag", a: "Phrase" },
+      { q: "although he failed", a: "Clause" },
+      { q: "across the road", a: "Phrase" },
+      { q: "He runs fast", a: "Clause" },
+      { q: "beside the river", a: "Phrase" },
+      { q: "I believe in you", a: "Clause" },
+      { q: "at the railway station", a: "Phrase" },
+      { q: "because I was sick", a: "Clause" },
+      { q: "a basket of fruits", a: "Phrase" },
+      { q: "while she was sleeping", a: "Clause" },
+      { q: "through the dark forest", a: "Phrase" },
+      { q: "He wrote a poem", a: "Clause" },
+      { q: "in a silent way", a: "Phrase" },
+      { q: "if you are free", a: "Clause" },
+      { q: "during the meeting", a: "Phrase" },
+      { q: "that he is honest", a: "Clause" },
+      { q: "without permission", a: "Phrase" },
+      { q: "since it was late", a: "Clause" },
+      { q: "on the table", a: "Phrase" },
+      { q: "I saw her dancing", a: "Clause" },
+      { q: "at midnight", a: "Phrase" },
+      { q: "what she said", a: "Clause" },
+      { q: "in an angry tone", a: "Phrase" },
+      { q: "He left the room silently", a: "Clause" }
+    ];
+
+    const container = document.getElementById('quiz-container');
+
+    questions.forEach((item, index) => {
+      const div = document.createElement('div');
+      div.className = 'question';
+      div.innerHTML = `
+        <p><b>Q${index + 1}:</b> ${item.q}</p>
+        <button class="show-btn" onclick="toggleAnswer(${index})">Show Answer</button>
+        <div class="answer" id="answer-${index}">✅ <strong>${item.a}</strong></div>
+      `;
+      container.appendChild(div);
+    });
+
+    function toggleAnswer(i) {
+      const ans = document.getElementById(`answer-${i}`);
+      ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <a href="grammer.html"> BACK</a>
+
+</body>
+</html>
