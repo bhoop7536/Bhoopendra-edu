@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>One Word Substitution</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e8f4ff;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #004080;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .note {
+      background: #d9f0ff;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      font-size: 1em;
+    }
+
+    .note ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .note ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #0077b6;
+    }
+    .question {
+      background: #e8f4ff;
+      border: 1px solid #90e0ef;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .question:hover {
+      background-color: #caf0f8;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color: #023e8a;
+      font-weight: bold;
+    }
+  </style>
+    <style>
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    h3 {
+      color: blue;
+      font-size: 30px;
+      background-color: yellow;
+      margin: 50px;
+      padding: 10px;
+      animation: slideIn 2s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>One Word Substitution (OWS)</h1>
+    <p class="intro">One Word Substitution (OWS) का मतलब होता है – किसी <b>पूरे वाक्य या वाक्यांश</b> (group of words) को <b>एक ही शब्द</b> में व्यक्त करना।</p>
+
+    <table>
+      <tr>
+        <th>वाक्यांश (Phrase)</th>
+        <th>One Word Substitution</th>
+        <th>हिंदी अर्थ</th>
+      </tr>
+      <tr>
+        <td>A person who cannot read or write</td>
+        <td>Illiterate</td>
+        <td>निरक्षर</td>
+      </tr>
+      <tr>
+        <td>A place where books are kept</td>
+        <td>Library</td>
+        <td>पुस्तकालय</td>
+      </tr>
+      <tr>
+        <td>A person who loves mankind</td>
+        <td>Philanthropist</td>
+        <td>परोपकारी व्यक्ति</td>
+      </tr>
+      <tr>
+        <td>A speech delivered without preparation</td>
+        <td>Extempore</td>
+        <td>बिना तैयारी का भाषण</td>
+      </tr>
+      <tr>
+        <td>A person who eats too much</td>
+        <td>Glutton</td>
+        <td>अधिक खाने वाला</td>
+      </tr>
+      <tr><td>One who looks at the bright side</td><td>Optimist</td><td>आशावादी</td></tr>
+      <tr><td>One who looks at the dark side</td><td>Pessimist</td><td>निराशावादी</td></tr>
+      <tr><td>One who believes in God</td><td>Theist</td><td>आस्तिक</td></tr>
+      <tr><td>One who does not believe in God</td><td>Atheist</td><td>नास्तिक</td></tr>
+      <tr><td>A person with no fixed home</td><td>Nomad</td><td>घुमंतू</td></tr>
+      <tr><td>A person who writes with both hands</td><td>Ambidextrous</td><td>दोनों हाथों से लिखने वाला</td></tr>
+      <tr><td>One who speaks many languages</td><td>Polyglot</td><td>बहुभाषी</td></tr>
+      <tr><td>A person who never drinks alcohol</td><td>Teetotaller</td><td>मद्यत्यागी</td></tr>
+      <tr><td>A handwriting that cannot be read</td><td>Illegible</td><td>अपठनीय</td></tr>
+      <tr><td>A place where animals are kept</td><td>Zoo</td><td>चिड़ियाघर</td></tr>
+      <tr><td>A place where dead bodies are kept</td><td>Mortuary</td><td>शवगृह</td></tr>
+      <tr><td>A woman whose husband is dead</td><td>Widow</td><td>विधवा</td></tr>
+      <tr><td>A man whose wife is dead</td><td>Widower</td><td>विधुर</td></tr>
+      <tr><td>A person who repairs cars</td><td>Mechanic</td><td>मिस्त्री</td></tr>
+      <tr><td>A person who cuts hair</td><td>Barber</td><td>नाई</td></tr>
+       <tr><td>A person who sells meat</td><td>Butcher</td><td>कसाई</td></tr>
+      <tr><td>A person who makes bread</td><td>Baker</td><td>हलवाई</td></tr>
+      <tr><td>A person who guards a building</td><td>Watchman</td><td>चौकीदार</td></tr>
+      <tr><td>A person who composes poems</td><td>Poet</td><td>कवि</td></tr>
+      <tr><td>A person who writes novels</td><td>Novelist</td><td>उपन्यासकार</td></tr>
+      <tr><td>One who collects stamps</td><td>Philatelist</td><td>डाक-टिकट संग्राहक</td></tr>
+      <tr><td>One who studies stars</td><td>Astronomer</td><td>खगोलशास्त्री</td></tr>
+      <tr><td>Study of Earth</td><td>Geology</td><td>भूविज्ञान</td></tr>
+      <tr><td>Study of Animals</td><td>Zoology</td><td>प्राणी विज्ञान</td></tr>
+      <tr><td>Study of Plants</td><td>Botany</td><td>वनस्पति विज्ञान</td></tr>
+      <tr><td>One who loves books</td><td>Bibliophile</td><td>पुस्तकों का प्रेमी</td></tr>
+      <tr><td>Government by the people</td><td>Democracy</td><td>लोकतंत्र</td></tr>
+      <tr><td>Government by king or queen</td><td>Monarchy</td><td>राजतंत्र</td></tr>
+      <tr><td>Government by few</td><td>Oligarchy</td><td>कुलीनतंत्र</td></tr>
+      <tr><td>Fear of water</td><td>Hydrophobia</td><td>जल का डर</td></tr>
+      <tr><td>Fear of height</td><td>Acrophobia</td><td>ऊंचाई का डर</td></tr>
+      <tr><td>Fear of closed places</td><td>Claustrophobia</td><td>संकुचित जगह का डर</td></tr>
+      <tr><td>Fear of snakes</td><td>Ophidiophobia</td><td>सांपों का डर</td></tr>
+      <tr><td>One who loves himself</td><td>Narcissist</td><td>आत्ममुग्ध</td></tr>
+      <tr><td>One who is always complaining</td><td>Faultfinder</td><td>दोष निकालने वाला</td></tr>
+       <tr><td>A person who makes statues</td><td>Sculptor</td><td>मूर्तिकार</td></tr>
+      <tr><td>A person who plays musical instruments</td><td>Musician</td><td>संगीतकार</td></tr>
+      <tr><td>A person who acts in movies</td><td>Actor</td><td>अभिनेता</td></tr>
+      <tr><td>A person who directs movies</td><td>Director</td><td>निर्देशक</td></tr>
+      <tr><td>A person who studies weather</td><td>Meteorologist</td><td>मौसम वैज्ञानिक</td></tr>
+      <tr><td>A person who steals</td><td>Thief</td><td>चोर</td></tr>
+      <tr><td>A person who is always optimistic</td><td>Optimist</td><td>आशावादी</td></tr>
+      <tr><td>A person who is always pessimistic</td><td>Pessimist</td><td>निराशावादी</td></tr>
+      <tr><td>One who loves nature</td><td>Nature-lover</td><td>प्रकृति प्रेमी</td></tr>
+      <tr><td>A person who writes biographies</td><td>Biographer</td><td>जीवनी लेखक</td></tr>
+      <tr><td>A person who writes his own life story</td><td>Autobiographer</td><td>आत्मकथा लेखक</td></tr>
+      <tr><td>One who hates mankind</td><td>Misanthrope</td><td>मानवता द्वेषी</td></tr>
+      <tr><td>One who loves women</td><td>Philogynist</td><td>स्त्री प्रेमी</td></tr>
+      <tr><td>One who hates women</td><td>Misogynist</td><td>स्त्री द्वेषी</td></tr>
+      <tr><td>One who loves himself too much</td><td>Egotist</td><td>अहंकारी</td></tr>
+      <tr><td>A person who travels on foot</td><td>Pedestrian</td><td>पैदल यात्री</td></tr>
+      <tr><td>One who walks in sleep</td><td>Somnambulist</td><td>नींद में चलने वाला</td></tr>
+      <tr><td>A person who believes everything easily</td><td>Credulous</td><td>विश्वासशील</td></tr>
+      <tr><td>A person who doubts everything</td><td>Skeptic</td><td>संदेहवादी</td></tr>
+      <tr><td>One who lends money at high interest</td><td>Usurer</td><td>सूदखोर</td></tr>
+      <tr><td>A person who makes statues</td><td>Sculptor</td><td>मूर्तिकार</td></tr>
+      <tr><td>A person who plays musical instruments</td><td>Musician</td><td>संगीतकार</td></tr>
+      <tr><td>A person who acts in movies</td><td>Actor</td><td>अभिनेता</td></tr>
+      <tr><td>A person who directs movies</td><td>Director</td><td>निर्देशक</td></tr>
+      <tr><td>A person who studies weather</td><td>Meteorologist</td><td>मौसम वैज्ञानिक</td></tr>
+      <tr><td>A person who steals</td><td>Thief</td><td>चोर</td></tr>
+      <tr><td>A person who is always optimistic</td><td>Optimist</td><td>आशावादी</td></tr>
+      <tr><td>A person who is always pessimistic</td><td>Pessimist</td><td>निराशावादी</td></tr>
+      <tr><td>One who loves nature</td><td>Naturalist</td><td>प्रकृति प्रेमी</td></tr>
+      <tr><td>A person who writes biographies</td><td>Biographer</td><td>जीवनी लेखक</td></tr>
+      <tr><td>A person who writes his own life story</td><td>Autobiographer</td><td>आत्मकथा लेखक</td></tr>
+      <tr><td>One who hates mankind</td><td>Misanthrope</td><td>मानवद्वेषी</td></tr>
+      <tr><td>One who loves women</td><td>Philogynist</td><td>स्त्री प्रेमी</td></tr>
+      <tr><td>One who hates women</td><td>Misogynist</td><td>स्त्री द्वेषी</td></tr>
+      <tr><td>One who loves himself too much</td><td>Egotist</td><td>अहंकारी</td></tr>
+      <tr><td>A person who travels on foot</td><td>Pedestrian</td><td>पैदल यात्री</td></tr>
+      <tr><td>One who walks in sleep</td><td>Somnambulist</td><td>नींद में चलने वाला</td></tr>
+      <tr><td>A person who believes everything easily</td><td>Credulous</td><td>विश्वासशील</td></tr>
+      <tr><td>A person who doubts everything</td><td>Skeptic</td><td>संदेहवादी</td></tr>
+      <tr><td>One who lends money at high interest</td><td>Usurer</td><td>सूदखोर</td></tr>
+      <tr><td>One who cannot make mistakes</td><td>Infallible</td><td>अभ्रांत</td></tr>
+      <tr><td>One who is all powerful</td><td>Omnipotent</td><td>सर्वशक्तिमान</td></tr>
+      <tr><td>One who knows everything</td><td>Omniscient</td><td>सर्वज्ञ</td></tr>
+      <tr><td>One who is present everywhere</td><td>Omnipresent</td><td>सर्वव्यापी</td></tr>
+      <tr><td>One who helps others</td><td>Altruist</td><td>परहितकारी</td></tr>
+      <tr><td>One who believes in fate</td><td>Fatalist</td><td>भाग्यवादी</td></tr>
+      <tr><td>A list of books</td><td>Catalogue</td><td>पुस्तकों की सूची</td></tr>
+      <tr><td>A person who talks in sleep</td><td>Somniloquist</td><td>नींद में बोलने वाला</td></tr>
+      <tr><td>One who is fifty years old</td><td>Quinquagenarian</td><td>पचास वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who is sixty years old</td><td>Sexagenarian</td><td>साठ वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who is seventy years old</td><td>Septuagenarian</td><td>सत्तर वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who is eighty years old</td><td>Octogenarian</td><td>अस्सी वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who is ninety years old</td><td>Nonagenarian</td><td>नब्बे वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who is hundred years old</td><td>Centenarian</td><td>सौ वर्षीय व्यक्ति</td></tr>
+      <tr><td>One who studies human history through excavation</td><td>Archaeologist</td><td>पुरातत्ववेत्ता</td></tr>
+      <tr><td>Study of mind</td><td>Psychology</td><td>मनोविज्ञान</td></tr>
+      <tr><td>Study of society</td><td>Sociology</td><td>समाजशास्त्र</td></tr>
+         <tr><td>One who collects coins</td><td>Numismatist</td><td>सिक्कों का संग्रहकर्ता</td></tr>
+      <tr><td>One who compiles dictionary</td><td>Lexicographer</td><td>शब्दकोश संकलक</td></tr>
+      <tr><td>One who loves books</td><td>Bibliophile</td><td>पुस्तक प्रेमी</td></tr>
+      <tr><td>A life story written by someone else</td><td>Biography</td><td>जीवनी</td></tr>
+      <tr><td>A person who speaks many languages</td><td>Polyglot</td><td>बहुभाषाविद</td></tr>
+      <tr><td>Fear of closed spaces</td><td>Claustrophobia</td><td>संकीर्ण स्थान का भय</td></tr>
+      <tr><td>Fear of water</td><td>Hydrophobia</td><td>जल का भय</td></tr>
+      <tr><td>Fear of heights</td><td>Acrophobia</td><td>ऊँचाई का भय</td></tr>
+      <tr><td>Government by the people</td><td>Democracy</td><td>लोकतंत्र</td></tr>
+      <tr><td>Government by a king</td><td>Monarchy</td><td>राजतंत्र</td></tr>
+      <tr><td>Government by the rich</td><td>Plutocracy</td><td>धनाड्य वर्ग का शासन</td></tr>
+      <tr><td>Government by the few</td><td>Oligarchy</td><td>अल्पतंत्र</td></tr>
+      <tr><td>One who does not believe in God</td><td>Atheist</td><td>नास्तिक</td></tr>
+      <tr><td>One who believes in God</td><td>Theist</td><td>आस्तिक</td></tr>
+      <tr><td>A place where orphans live</td><td>Orphanage</td><td>अनाथालय</td></tr>
+      <tr><td>A place where books are kept</td><td>Library</td><td>पुस्तकालय</td></tr>
+      <tr><td>A place where birds are kept</td><td>Aviary</td><td>पक्षीशाला</td></tr>
+      <tr><td>A place where animals are kept</td><td>Zoo</td><td>चिड़ियाघर</td></tr>
+    </table>
+
+
+    <div class="note">
+      <strong>✅ One Word Substitution क्यों ज़रूरी है?</strong>
+      <ul>
+        <li>भाषा को संक्षिप्त और प्रभावी बनाता है।</li>
+        <li>प्रतियोगी परीक्षाओं (SSC, UPSC, Bank, etc.) में अक्सर पूछा जाता है।</li>
+        <li>Vocabulary को मजबूत करता है।</li>
+      </ul>
+    </div>
+  </div>
+    <h2>One Word Substitution Quiz (20 Questions)</h2>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    1. A person who cannot read or write
+    <div class="answer">Illiterate</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    2. A person who loves mankind
+    <div class="answer">Philanthropist</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    3. A speech delivered without preparation
+    <div class="answer">Extempore</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    4. A person who eats too much
+    <div class="answer">Glutton</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    5. A place where books are kept
+    <div class="answer">Library</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    6. One who walks in sleep
+    <div class="answer">Somnambulist</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    7. One who is all powerful
+    <div class="answer">Omnipotent</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    8. One who believes in fate
+    <div class="answer">Fatalist</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    9. A list of books
+    <div class="answer">Catalogue</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    10. Study of society
+    <div class="answer">Sociology</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    11. A person who looks at the bright side of things
+    <div class="answer">Optimist</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    12. A handwriting that cannot be read
+    <div class="answer">Illegible</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    13. A person who does not believe in God
+    <div class="answer">Atheist</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    14. A person who loves books
+    <div class="answer">Bibliophile</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    15. One who hates mankind
+    <div class="answer">Misanthrope</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    16. A person who is unable to pay debts
+    <div class="answer">Insolvent</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    17. One who speaks many languages
+    <div class="answer">Multilingual</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    18. A person who can do anything
+    <div class="answer">Versatile</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    19. A place where animals are kept
+    <div class="answer">Zoo</div>
+  </div>
+
+  <div class="question" onclick="toggleAnswer(this)">
+    20. A doctor who treats children
+    <div class="answer">Pediatrician</div>
+  </div>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.querySelector(".answer");
+      answer.style.display = (answer.style.display === "none" || answer.style.display === "") ? "block" : "none";
+    }
+  </script>
+  <br>
+ 
+ 
+  <h3>Thanks for reading</h3>
+
+  <a href="vocabulary.html">BACK</a>
+
+</body>
+</html>
