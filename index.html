@@ -2,84 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bhoopendra Educational</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Bhoopendra Educational</title>
   <link rel="stylesheet" href="STYLE.CSS">
-   <style>
+  <style>
     .blinking {
       color: green;
       font-size: 50px;
-       font-style: italic;
+      font-style: italic;
       font-weight: bold;
       animation: blink 5s infinite;
     }
-
     @keyframes blink {
       0% { opacity: 1; }
       50% { opacity: 0; }
       100% { opacity: 1; }
     }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px;
+      background: #00509d;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #contactDetails {
+      display: none;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #00509d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
   </style>
-
 </head>
 <body>
- 
-
-
   <header>
-    <h1 style="
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  color: #ffffff;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-">
- <h1> <div class="blinking">📘 Bhoopendra Educational</div></h1>
-</h1>
-
-   <marquee behavior="scroll" direction="left" style="background-color: #00509d; padding: 10px; font-weight: bold; font-size: 20px;">
-  <span style="color: red;">Bright your future</span> 
-  <span style="color: white;"> if you will read and learn</span>
-</marquee>
-
+    <div class="blinking">📘 Bhoopendra Educational</div>
+    <marquee behavior="scroll" direction="left" style="background-color: #00509d; padding: 10px; font-weight: bold; font-size: 20px; color: white;">
+      <span style="color: red;">Bright your future</span> if you will read and learn
+    </marquee>
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Geography</a></li>
-        <li><a href="#">Math</a></li>
-        <li><a href="#">Reasoning</a></li>
-        <li><a href="#">English</a></li>
-        <!-- Button or Link -->
-    <button onclick="showContact()">Contact</button>
-    <!-- Hidden Contact Details -->
-    <div id="contactDetails">
-        <h3>Contact Us</h3>
-        <p>Email: bhoopendraeducational@gmail.com</p>
-        <p>Phone: +91-6395518256</p>
-        <p>Address: Bareilly, Uttar Pradesh, India</p>
-    </div>
-
-    <!-- Script -->
-    <script>
-        function showContact() {
-            var contact = document.getElementById("contactDetails");
-            if (contact.style.display === "none") {
-                contact.style.display = "block"; // Show kare
-            } else {
-                contact.style.display = "none"; // Hide kare (toggle)
-            }
-        }
-    </script>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="geography.html">Geography</a></li>
+        <li><a href="Math.html">Math</a></li>
+        <li><a href="Reasoning.html">Reasoning</a></li>
+        <li><a href="English.html">English</a></li>
       </ul>
     </nav>
   </header>
- 
-
 
   <main>
     <section class="intro">
@@ -88,37 +77,37 @@
     </section>
 
     <section class="subjects">
-      
-    <div class="card">
-    <a href="History.html" style="text-decoration: none; color: inherit;"> 📚 history</a>
-</div>
-
-<div class="card">
-    <a href="geography.html" style="text-decoration: none; color: inherit;">🌍 Geography</a>
-</div>
-<div class="card">
-    <a href="current affairs.html" style="text-decoration: none; color: inherit;">🌐 current affairs</a>
-</div>
-<div class="card">
-    <a href="Math.html" style="text-decoration: none; color: inherit;">🧮 Math</a>
-</div>
-<div class="card">
-    <a href="Reasoning.html" style="text-decoration: none; color: inherit;">🧠 Reasoning</a>
-</div>
-<div class="card">
-    <a href="English.html" style="text-decoration: none; color: inherit;"> English</a>
-</div>
-
+      <div class="card"><a href="History.html">📚 History</a></div>
+      <div class="card"><a href="geography.html">🌍 Geography</a></div>
+      <div class="card"><a href="current-affairs.html">🌐 Current Affairs</a></div>
+      <div class="card"><a href="Math.html">🧮 Math</a></div>
+      <div class="card"><a href="Reasoning.html">🧠 Reasoning</a></div>
+      <div class="card"><a href="English.html">📘 English</a></div>
     </section>
   </main>
 
+  <section id="contactDetails">
+    <h3>Contact Us</h3>
+    <p>Email: bhoopendraeducational@gmail.com</p>
+    <p>Phone: +91-6395518256</p>
+    <p>Address: Bareilly, Uttar Pradesh, India</p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Bhoopendra Educational. All rights reserved.</p>
+    <p>Powered by GitHub | Designed by Bhoopendra Kumar</p>
   </footer>
 
-
+  <script>
+    // Optional Contact Toggle Script (you can remove if using a separate contact page)
+    function showContact() {
+      var contact = document.getElementById("contactDetails");
+      if (contact.style.display === "none") {
+        contact.style.display = "block";
+      } else {
+        contact.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
-
- 
-
