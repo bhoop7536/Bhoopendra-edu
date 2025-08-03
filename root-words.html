@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root Words Explained</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .example {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 5px solid #ffc107;
+      border-radius: 8px;
+    }
+
+    .example strong {
+      color: #ffd700;
+    }
+
+    .root-title {
+      font-size: 24px;
+      color: #00ffff;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+  </style>
+    <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      font-size: 18px;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #00ffff;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+  </style>
+    <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 30px;
+    }
+
+    .quiz-container {
+      max-width: 850px;
+      margin: auto;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 25px;
+    }
+
+    .question h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      padding: 8px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .correct {
+      background-color: #28a745;
+    }
+
+    .incorrect {
+      background-color: #dc3545;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+      background-color: #ffc107;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    #result {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 20px;
+      background: rgba(0,0,0,0.4);
+      padding: 15px;
+      border-radius: 10px;
+    }
+  </style>
+  <style>
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: WHITE;
+    padding: 30px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Watermark style */
+  body::before {
+    content: "BHOOPENDRA EDUCATION";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 90px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.15);
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .quiz-container, h1, #result, .submit-btn {
+    position: relative;
+    z-index: 1; /* so they stay above the watermark */
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Root Word क्या होते हैं?</h1>
+    <p>
+      Root word एक ऐसा मूल शब्द होता है जिससे नए शब्द बनाए जाते हैं। इसमें prefix (पूर्व रूप) और suffix (उत्तर रूप) नहीं होते।
+    </p>
+    <div class="container">
+    <h1>Prefix और Suffix क्या होते हैं?</h1>
+
+    <div class="section">
+      <h2>🔹 Prefix (पूर्व-प्रत्यय)</h2>
+      <p>
+        Prefix वह भाग होता है जो किसी शब्द के <strong>शुरुआत में</strong> जुड़ता है और उसका अर्थ बदल देता है।
+      </p>
+      <div class="example-box">
+        <p><strong>Un + Happy</strong> = Unhappy → "Un" का अर्थ: नहीं</p>
+        <p><strong>Re + Play</strong> = Replay → "Re" का अर्थ: दोबारा</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🔹 Suffix (उत्तर-प्रत्यय)</h2>
+      <p>
+        Suffix वह भाग होता है जो किसी शब्द के <strong>अंत में</strong> जुड़ता है और उस शब्द का प्रकार (noun, verb, adjective) बदल देता है।
+      </p>
+      <div class="example-box">
+        <p><strong>Teach + er</strong> = Teacher → "er" का अर्थ: करने वाला</p>
+        <p><strong>Kind + ness</strong> = Kindness → "ness" का अर्थ: भावना/भाव</p>
+      </div>
+    </div>
+  </div>
+    <h1>Prefix और Suffix के 20-20 Examples</h1>
+
+  <div class="section-title">🔹 Prefix Examples</div>
+  <table>
+    <tr>
+      <th>Prefix</th>
+      <th>Word</th>
+      <th>Hindi Meaning</th>
+    </tr>
+    <tr><td>Un-</td><td>Unhappy</td><td>दुखी (खुश नहीं)</td></tr>
+    <tr><td>Re-</td><td>Rewrite</td><td>फिर से लिखना</td></tr>
+    <tr><td>Pre-</td><td>Prepaid</td><td>पहले से भुगतान</td></tr>
+    <tr><td>Mis-</td><td>Misunderstand</td><td>गलत समझना</td></tr>
+    <tr><td>Dis-</td><td>Disconnect</td><td>अलग करना</td></tr>
+    <tr><td>Over-</td><td>Overeat</td><td>ज़्यादा खाना</td></tr>
+    <tr><td>Under-</td><td>Underestimate</td><td>कम आंकना</td></tr>
+    <tr><td>In-</td><td>Inactive</td><td>सक्रिय नहीं</td></tr>
+    <tr><td>Im-</td><td>Impossible</td><td>असंभव</td></tr>
+    <tr><td>Ir-</td><td>Irregular</td><td>अनियमित</td></tr>
+    <tr><td>Il-</td><td>Illegal</td><td>गैरकानूनी</td></tr>
+    <tr><td>Non-</td><td>Nonstop</td><td>बिना रुके</td></tr>
+    <tr><td>Anti-</td><td>Antivirus</td><td>वायरस के खिलाफ</td></tr>
+    <tr><td>Auto-</td><td>Autopilot</td><td>स्वतः नियंत्रित</td></tr>
+    <tr><td>Co-</td><td>Cooperate</td><td>सहयोग करना</td></tr>
+    <tr><td>Sub-</td><td>Submarine</td><td>जलयान (समुंदर में)</td></tr>
+    <tr><td>Inter-</td><td>Interact</td><td>परस्पर क्रिया</td></tr>
+    <tr><td>Super-</td><td>Superstar</td><td>बहुत प्रसिद्ध</td></tr>
+    <tr><td>Trans-</td><td>Transport</td><td>इधर-उधर ले जाना</td></tr>
+    <tr><td>Bi-</td><td>Bilingual</td><td>दो भाषाओं वाला</td></tr>
+  </table>
+
+  <div class="section-title">🔸 Suffix Examples</div>
+  <table>
+    <tr>
+      <th>Word</th>
+      <th>Suffix</th>
+      <th>New Word</th>
+      <th>Hindi Meaning</th>
+    </tr>
+    <tr><td>Teach</td><td>-er</td><td>Teacher</td><td>पढ़ाने वाला</td></tr>
+    <tr><td>Drive</td><td>-er</td><td>Driver</td><td>गाड़ी चलाने वाला</td></tr>
+    <tr><td>Child</td><td>-hood</td><td>Childhood</td><td>बचपन</td></tr>
+    <tr><td>Friend</td><td>-ship</td><td>Friendship</td><td>मित्रता</td></tr>
+    <tr><td>Kind</td><td>-ness</td><td>Kindness</td><td>दयालुता</td></tr>
+    <tr><td>Happy</td><td>-ness</td><td>Happiness</td><td>ख़ुशी</td></tr>
+    <tr><td>Help</td><td>-ful</td><td>Helpful</td><td>मददगार</td></tr>
+    <tr><td>Care</td><td>-less</td><td>Careless</td><td>लापरवाह</td></tr>
+    <tr><td>Power</td><td>-ful</td><td>Powerful</td><td>शक्तिशाली</td></tr>
+    <tr><td>Act</td><td>-ion</td><td>Action</td><td>क्रिया</td></tr>
+    <tr><td>Create</td><td>-ive</td><td>Creative</td><td>रचनात्मक</td></tr>
+    <tr><td>Hope</td><td>-less</td><td>Hopeless</td><td>निराश</td></tr>
+    <tr><td>Nation</td><td>-al</td><td>National</td><td>राष्ट्रीय</td></tr>
+    <tr><td>Use</td><td>-able</td><td>Usable</td><td>उपयोग योग्य</td></tr>
+    <tr><td>Move</td><td>-ment</td><td>Movement</td><td>आंदोलन</td></tr>
+    <tr><td>Attract</td><td>-ive</td><td>Attractive</td><td>आकर्षक</td></tr>
+    <tr><td>Employ</td><td>-ment</td><td>Employment</td><td>रोजगार</td></tr>
+    <tr><td>Honest</td><td>-y</td><td>Honesty</td><td>ईमानदारी</td></tr>
+    <tr><td>Fear</td><td>-ful</td><td>Fearful</td><td>भयभीत</td></tr>
+    <tr><td>Read</td><td>-able</td><td>Readable</td><td>पढ़ने योग्य</td></tr>
+  </table>
+
+    <!-- Root Word 1 -->
+    <div class="example">
+      <div class="root-title">1. Root Word: <strong>Act</strong> (करना)</div>
+      <p><strong>React</strong> = Re + Act → फिर से करना</p>
+      <p><strong>Actor</strong> = Act + or → करने वाला</p>
+    </div>
+
+    <!-- Root Word 2 -->
+    <div class="example">
+      <div class="root-title">2. Root Word: <strong>Form</strong> (रूप देना / आकार देना)</div>
+      <p><strong>Transform</strong> = Trans + Form → रूपांतरण करना</p>
+      <p><strong>Formation</strong> = Form + ation → निर्माण</p>
+    </div>
+
+    <!-- Root Word 3 -->
+    <div class="example">
+      <div class="root-title">3. Root Word: <strong>Port</strong> (ले जाना)</div>
+      <p><strong>Export</strong> = Ex + Port → बाहर ले जाना</p>
+      <p><strong>Import</strong> = Im + Port → अंदर लाना</p>
+      <p><strong>Portable</strong> = Port + able → जो ले जाया जा सके</p>
+    </div>
+
+    <!-- Root Word 4 -->
+    <div class="example">
+      <div class="root-title">4. Root Word: <strong>Dict</strong> (बोलना)</div>
+      <p><strong>Predict</strong> = Pre + Dict → पहले से कहना</p>
+      <p><strong>Dictionary</strong> = Dict + ionary → शब्दकोश (जहाँ शब्दों के अर्थ कहे गए हों)</p>
+    </div>
+
+    <!-- Root Word 5 -->
+    <div class="example">
+      <div class="root-title">5. Root Word: <strong>Spect</strong> (देखना)</div>
+      <p><strong>Inspect</strong> = In + Spect → निरीक्षण करना</p>
+      <p><strong>Spectator</strong> = Spect + ator → देखने वाला</p>
+    </div>
+  </div>
+   <h1>Prefix & Suffix Quiz</h1>
+  <div class="quiz-container" id="quiz">
+    <!-- Questions will be inserted here by JavaScript -->
+  </div>
+  <button class="submit-btn" onclick="submitQuiz()">Submit</button>
+  <div id="result"></div>
+
+  <script>
+    const quizData = [
+      { q: "What is the prefix in the word 'Disagree'?", options: ["Dis", "Agree", "Re", "None"], correct: 0 },
+      { q: "Which suffix means 'a person who does something'?", options: ["-less", "-er", "-ful", "-ness"], correct: 1 },
+      { q: "What does the prefix 'Un-' mean?", options: ["Again", "Not", "Over", "Below"], correct: 1 },
+      { q: "What is the suffix in 'Happiness'?", options: ["Happy", "ness", "hap", "None"], correct: 1 },
+      { q: "Replay means:", options: ["Stop playing", "Watch again", "Play again", "Forget to play"], correct: 2 },
+      { q: "Which word contains a suffix?", options: ["Rewrite", "Unkind", "Kindness", "Preview"], correct: 2 },
+      { q: "What is the root word in 'Helpful'?", options: ["Full", "Help", "Hel", "Helping"], correct: 1 },
+      { q: "Which word uses the prefix 'Pre-'?", options: ["Postpone", "Prepaid", "Rebuild", "Discover"], correct: 1 },
+      { q: "What does the suffix '-less' mean?", options: ["Full of", "Without", "Action", "Not again"], correct: 1 },
+      { q: "What is the prefix in 'Impossible'?", options: ["Possible", "Im", "In", "Pos"], correct: 1 },
+      { q: "The suffix in 'Careless' means:", options: ["With care", "Having care", "Without care", "Too much care"], correct: 2 },
+      { q: "'Auto-' means:", options: ["Manually", "Again", "Self", "Stop"], correct: 2 },
+      { q: "'Bi-' in 'Bilingual' means:", options: ["One", "Two", "Three", "No"], correct: 1 },
+      { q: "'-er' in 'Driver' means:", options: ["Vehicle", "Doing the action", "Lazy", "Fast"], correct: 1 },
+      { q: "'Rewrite' means:", options: ["Delete it", "Read again", "Write again", "Skip writing"], correct: 2 },
+      { q: "Suffix in 'Movement' is:", options: ["Move", "ment", "mo", "mov"], correct: 1 },
+      { q: "What does 'Sub-' mean in 'Submarine'?", options: ["Over", "Between", "Under", "Again"], correct: 2 },
+      { q: "Which word contains both prefix and suffix?", options: ["Unhappy", "Replay", "Kindness", "Unhelpful"], correct: 3 },
+      { q: "'-ship' in 'Friendship' means:", options: ["Relation", "Action", "Not", "Place"], correct: 0 },
+      { q: "What is the suffix in 'National'?", options: ["Na", "Nation", "al", "Tional"], correct: 2 }
+    ];
+
+    function loadQuiz() {
+      const quizContainer = document.getElementById('quiz');
+      quizContainer.innerHTML = '';
+      quizData.forEach((item, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question');
+        questionDiv.innerHTML = `<h3>${index + 1}. ${item.q}</h3>`;
+        item.options.forEach((option, i) => {
+          const label = document.createElement('label');
+          label.innerHTML = `<input type="radio" name="q${index}" value="${i}"> ${option}`;
+          questionDiv.appendChild(label);
+        });
+        quizContainer.appendChild(questionDiv);
+      });
+    }
+
+    function submitQuiz() {
+      let score = 0;
+      quizData.forEach((item, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        const labels = document.querySelectorAll(`input[name="q${index}"]`).forEach((input, i) => {
+          const parent = input.parentElement;
+          parent.classList.remove('correct', 'incorrect');
+          if (i === item.correct) {
+            parent.classList.add('correct');
+          }
+        });
+        if (selected && parseInt(selected.value) === item.correct) {
+          score++;
+        } else if (selected) {
+          selected.parentElement.classList.add('incorrect');
+        }
+      });
+      document.getElementById('result').innerText = `You scored ${score} out of ${quizData.length}`;
+    }
+
+    loadQuiz();
+  </script>
+<a href="vocabulary.html">BACK</a>
+
+</body>
+</html>
