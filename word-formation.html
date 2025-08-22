@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word Formation — शब्द निर्माण</title>
+  <style>
+    :root{
+      --bg:#E8F8FF; /* soft ocean-ish */
+      --card:#ffffff;
+      --accent:#0b6e99;
+      --accent-2:#00a3c4;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.6);
+      --watermark: rgba(0,0,0,0.05);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial;
+      background: linear-gradient(160deg,var(--bg), #F6FBFF 60%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 24px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      position:relative;
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:22px;
+    }
+    .logo{
+      width:78px;height:78px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px;box-shadow:0 8px 30px rgba(3,78,103,0.12);
+    }
+    h1{font-size:28px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:18px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow: 0 6px 30px rgba(9,30,40,0.06);
+      backdrop-filter: blur(6px);
+    }
+
+    .big-card{
+      padding:28px;
+    }
+
+    .section-title{
+      display:flex;align-items:center;gap:12px;margin-bottom:12px
+    }
+    .badge{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:6px 10px;border-radius:10px;font-weight:600}
+    h2{margin:0;font-size:18px}
+
+    .examples{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .example{background:linear-gradient(180deg,rgba(3,78,103,0.04),transparent);padding:10px;border-radius:12px;border:1px solid rgba(3,78,103,0.06)}
+    .meta{color:var(--muted);font-size:13px}
+
+    dl{margin:12px 0 0}
+    dt{font-weight:700;margin-top:12px}
+    dd{margin:6px 0 12px;color:var(--muted)}
+
+    /* right column */
+    .sidebar h3{margin:0 0 8px}
+    .list{display:flex;flex-direction:column;gap:8px}
+    .chip{padding:10px;border-radius:10px;background:#F3FBFF;border:1px solid rgba(3,78,103,0.04);font-weight:600}
+
+    /* footer */
+    footer{margin-top:16px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* watermark */
+    .watermark{
+      position:fixed;right:16px;bottom:12px;font-weight:700;color:var(--watermark);font-size:36px;transform:rotate(-18deg);pointer-events:none;user-select:none;
+    }
+
+    /* responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .logo{width:56px;height:56px;font-size:18px}
+    }
+
+    /* little interactive highlight */
+    .toggle{
+      display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid rgba(3,78,103,0.08);background:transparent;cursor:pointer;font-weight:600
+    }
+    .note{font-size:13px;color:var(--muted)}
+
+    /* code style */
+    pre{background:#0b1820;color:#e6f7ff;padding:12px;border-radius:10px;overflow:auto}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <br>
+      <div class="logo" style="font-size:28px; font-weight:bold;">BE</div>
+      <div>
+
+      <h1 style="
+  font-size:42px;
+  text-align:center;
+  color:#0b6e99;
+  font-weight:bold;
+  display:inline-block;       /* underline को text की चौड़ाई तक सीमित करेगा */
+  padding-bottom:12px;        /* underline को नीचे ले जाएगा */
+  border-bottom:3px solid #0b6e99; /* underline का रंग और मोटाई */
+">
+  Word Formation — शब्द निर्माण
+</h1>
+</div>
+</header>
+        <p class="lead">Word formation का मतलब है नए शब्द बनाना या मौजूदा शब्दों में बदलाव करके नए शब्द तैयार करना। यह भाषा की समझ को गहरा करता है और vocabulary बढ़ाता है।</p>
+          <div class="word-section">
+    <h3>1. <span class="highlight">Word</span></h3>
+    <p>पुरानी अंग्रेज़ी (<em>Old English</em>) का शब्द <strong>word</strong>,  
+       जिसका अर्थ है “शब्द” या “बोली में प्रयुक्त इकाई”।  
+       यह <strong>Proto-Germanic</strong> भाषा के <em>wurdan</em> और फिर  
+       <strong>Proto-Indo-European</strong> मूल <em>werdʰ-</em> से जुड़ता है,  
+       जिसका अर्थ था “बोलना” या “नाम रखना”।</p>
+  </div>
+    <div class="word-section">
+    <h3>2. <span class="highlight">Formation</span></h3>
+    <p>यह लैटिन शब्द <em>formatio</em> से आया है, जिसका मतलब है  
+       “रचना करना” या “आकार देना”। <em>formatio</em> बना है  
+       <strong>formare</strong> (आकार देना) + <strong>-tio</strong>  
+       (क्रिया को संज्ञा बनाने वाला प्रत्यय) से।  
+       <strong>formare</strong> खुद लैटिन <em>forma</em> (रूप, आकार) से आया है।</p>
+  </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card big-card">
+        <div class="section-title">
+          <div class="badge">मुख्य तरीके</div>
+          <h2>Word Formation के मुख्य तरीके</h2>
+        </div>
+
+        <dl>
+          <dt>1. Prefix लगाना</dt>
+          <dd>
+            Prefix = किसी शब्द के शुरुआत में जोड़ा जाने वाला भाग, जिससे अर्थ बदल जाता है।
+            <div class="examples">
+              <div class="example"><strong>happy → unhappy</strong><div class="meta">(prefix "un" = not)</div></div>
+              <div class="example"><strong>possible → impossible</strong><div class="meta">(prefix "im" = not)</div></div>
+            </div>
+          </dd>
+
+          <dt>2. Suffix लगाना</dt>
+          <dd>
+            Suffix = किसी शब्द के अंत में जोड़ा जाने वाला भाग।
+            <div class="examples">
+              <div class="example"><strong>teach → teacher</strong><div class="meta">("er" = व्यक्ति जो काम करता है)</div></div>
+              <div class="example"><strong>kind → kindness</strong><div class="meta">('ness' = गुण/स्थिति)</div></div>
+            </div>
+          </dd>
+
+          <dt>3. Compounding (दो शब्द मिलाकर)</dt>
+          <dd>दो या ज़्यादा शब्द मिलाकर नया शब्द बनाना।<div class="examples"><div class="example"><strong>blackboard</strong></div><div class="example"><strong>toothbrush</strong></div></div></dd>
+
+          <dt>4. Conversion (शब्द का रूप बदले बिना उसका वर्ग बदलना)</dt>
+          <dd>Noun को verb बनाना, verb को noun बनाना आदि।<div class="examples"><div class="example"><strong>email (noun) → to email (verb)</strong></div></div></dd>
+
+          <dt>5. Clipping</dt>
+          <dd>किसी लंबे शब्द को छोटा करना।<div class="examples"><div class="example"><strong>advertisement → ad</strong></div><div class="example"><strong>telephone → phone</strong></div></div></dd>
+
+          <dt>6. Blending (दो शब्दों के हिस्से मिलाना)</dt>
+          <dd><div class="examples"><div class="example"><strong>smoke + fog → smog</strong></div><div class="example"><strong>breakfast + lunch → brunch</strong></div></div></dd>
+
+          <dt>7. Abbreviation / Acronym</dt>
+          <dd><div class="examples"><div class="example"><strong>NASA</strong></div><div class="example"><strong>UNESCO</strong></div></div></dd>
+        </dl>
+
+        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(3,78,103,0.06)">
+
+        <div style="display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+          
+          
+        </div>
+
+        <pre id="source" style="display:none">&lt;!-- यह पूरा पेज HTML + CSS है — copy करके इस्तेमाल करें --&gt;</pre>
+      </main>
+
+      <aside class="card sidebar">
+        <h3>Quick Tips</h3>
+        <div class="list">
+          <div class="chip">Prefix को याद करने के लिए common list बनाओ</div>
+          <div class="chip">Suffix से word class पता चलता है (noun/adj/adv)</div>
+          <div class="chip">Compounds को context में पढ़ो — अलग अलग अर्थ हो सकते हैं</div>
+          <div class="chip">Conversion exam में common trick है</div>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3>Examples ध्यान से पढ़ो</h3>
+          <p class="note">उदाहरण दिखाते हैं कि कैसे छोटा सा बदलाव पूरे शब्द का अर्थ बदल सकता है।</p>
+        </div>
+      </aside>
+    </div>
+     <table style="width:100%;border-collapse:separate;border-spacing:0 8px;font-family:'Segoe UI',sans-serif;">
+  <thead>
+    <tr style="background:#0b6e99;color:white;">
+      <th style="padding:12px 15px;border:1px solid #ccc;">No.</th>
+      <th style="padding:12px 15px;border:1px solid #ccc;">Root Word</th>
+      <th style="padding:12px 15px;border:1px solid #ccc;">Formed Word</th>
+      <th style="padding:12px 15px;border:1px solid #ccc;">Formation Type</th>
+      <th style="padding:12px 15px;border:1px solid #ccc;">Meaning (Hindi)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:8px;border:1px solid #ccc;">1</td><td>Happy</td><td>Unhappy</td><td>Prefix</td><td>अप्रसन्न</td></tr>
+    <tr><td>2</td><td>Possible</td><td>Impossible</td><td>Prefix</td><td>असंभव</td></tr>
+    <tr><td>3</td><td>Agree</td><td>Disagree</td><td>Prefix</td><td>असहमत होना</td></tr>
+    <tr><td>4</td><td>Appear</td><td>Disappear</td><td>Prefix</td><td>गायब होना</td></tr>
+    <tr><td>5</td><td>Polite</td><td>Impolite</td><td>Prefix</td><td>असभ्य</td></tr>
+    
+    <tr><td>6</td><td>Teach</td><td>Teacher</td><td>Suffix</td><td>शिक्षक</td></tr>
+    <tr><td>7</td><td>Kind</td><td>Kindness</td><td>Suffix</td><td>दयालुता</td></tr>
+    <tr><td>8</td><td>Manage</td><td>Management</td><td>Suffix</td><td>प्रबंधन</td></tr>
+    <tr><td>9</td><td>Active</td><td>Activity</td><td>Suffix</td><td>गतिविधि</td></tr>
+    <tr><td>10</td><td>Friend</td><td>Friendship</td><td>Suffix</td><td>मित्रता</td></tr>
+    
+    <tr><td>11</td><td>Black + Board</td><td>Blackboard</td><td>Compound</td><td>ब्लैकबोर्ड</td></tr>
+    <tr><td>12</td><td>Tooth + Brush</td><td>Toothbrush</td><td>Compound</td><td>दांत साफ करने का ब्रश</td></tr>
+    <tr><td>13</td><td>Rain + Bow</td><td>Rainbow</td><td>Compound</td><td>इंद्रधनुष</td></tr>
+    <tr><td>14</td><td>Sun + Flower</td><td>Sunflower</td><td>Compound</td><td>सूरजमुखी</td></tr>
+    <tr><td>15</td><td>Snow + Man</td><td>Snowman</td><td>Compound</td><td>बर्फ का आदमी</td></tr>
+    
+    <tr><td>16</td><td>Email (n)</td><td>To Email (v)</td><td>Conversion</td><td>ईमेल भेजना</td></tr>
+    <tr><td>17</td><td>Google (n)</td><td>To Google (v)</td><td>Conversion</td><td>गूगल पर खोजना</td></tr>
+    <tr><td>18</td><td>Access (n)</td><td>To Access (v)</td><td>Conversion</td><td>प्रवेश/पाना</td></tr>
+    <tr><td>19</td><td>Water (n)</td><td>To Water (v)</td><td>Conversion</td><td>पानी देना</td></tr>
+    <tr><td>20</td><td>Impact (n)</td><td>To Impact (v)</td><td>Conversion</td><td>प्रभाव डालना</td></tr>
+    
+    <tr><td>21</td><td>Advertisement</td><td>Ad</td><td>Clipping</td><td>विज्ञापन</td></tr>
+    <tr><td>22</td><td>Telephone</td><td>Phone</td><td>Clipping</td><td>फोन</td></tr>
+    <tr><td>23</td><td>Influenza</td><td>Flu</td><td>Clipping</td><td>फ़्लू</td></tr>
+    <tr><td>24</td><td>Photograph</td><td>Photo</td><td>Clipping</td><td>फ़ोटो</td></tr>
+    <tr><td>25</td><td>Gymnasium</td><td>Gym</td><td>Clipping</td><td>जिम</td></tr>
+    
+    <tr><td>26</td><td>Smoke + Fog</td><td>Smog</td><td>Blending</td><td>धुएँ और कुहरे का मिश्रण</td></tr>
+    <tr><td>27</td><td>Breakfast + Lunch</td><td>Brunch</td><td>Blending</td><td>नाश्ता और दोपहर का भोजन साथ</td></tr>
+    <tr><td>28</td><td>Motor + Hotel</td><td>Motel</td><td>Blending</td><td>सड़क किनारे होटल</td></tr>
+    <tr><td>29</td><td>Camera + Recorder</td><td>Camcorder</td><td>Blending</td><td>कैमरा रिकॉर्डर</td></tr>
+    <tr><td>30</td><td>Web + Seminar</td><td>Webinar</td><td>Blending</td><td>ऑनलाइन सेमिनार</td></tr>
+    
+    <tr><td>31</td><td>National Aeronautics and Space Administration</td><td>NASA</td><td>Acronym</td><td>नासा</td></tr>
+    <tr><td>32</td><td>United Nations Educational, Scientific and Cultural Organization</td><td>UNESCO</td><td>Acronym</td><td>यूनेस्को</td></tr>
+    <tr><td>33</td><td>World Health Organization</td><td>WHO</td><td>Acronym</td><td>विश्व स्वास्थ्य संगठन</td></tr>
+    <tr><td>34</td><td>Self Contained Underwater Breathing Apparatus</td><td>SCUBA</td><td>Acronym</td><td>स्कूबा</td></tr>
+    <tr><td>35</td><td>Light Amplification by Stimulated Emission of Radiation</td><td>LASER</td><td>Acronym</td><td>लेजर</td></tr>
+    
+    <tr><td>36</td><td>Write</td><td>Re-write</td><td>Prefix</td><td>दोबारा लिखना</td></tr>
+    <tr><td>37</td><td>Read</td><td>Reader</td><td>Suffix</td><td>पाठक</td></tr>
+    <tr><td>38</td><td>Build</td><td>Builder</td><td>Suffix</td><td>निर्माता</td></tr>
+    <tr><td>39</td><td>Beauty</td><td>Beautiful</td><td>Suffix</td><td>सुंदर</td></tr>
+    <tr><td>40</td><td>Care</td><td>Careless</td><td>Suffix</td><td>लापरवाह</td></tr>
+    
+    <tr><td>41</td><td>Child</td><td>Childhood</td><td>Suffix</td><td>बचपन</td></tr>
+    <tr><td>42</td><td>Love</td><td>Lovely</td><td>Suffix</td><td>प्यारा</td></tr>
+    <tr><td>43</td><td>Danger</td><td>Dangerous</td><td>Suffix</td><td>खतरनाक</td></tr>
+    <tr><td>44</td><td>Hero</td><td>Heroism</td><td>Suffix</td><td>वीरता</td></tr>
+    <tr><td>45</td><td>Employ</td><td>Employment</td><td>Suffix</td><td>रोज़गार</td></tr>
+    
+    <tr><td>46</td><td>Inform</td><td>Information</td><td>Suffix</td><td>सूचना</td></tr>
+    <tr><td>47</td><td>Create</td><td>Creation</td><td>Suffix</td><td>सृजन</td></tr>
+    <tr><td>48</td><td>Decide</td><td>Decision</td><td>Suffix</td><td>निर्णय</td></tr>
+    <tr><td>49</td><td>Move</td><td>Movement</td><td>Suffix</td><td>आंदोलन</td></tr>
+    <tr><td>50</td><td>Perform</td><td>Performance</td><td>Suffix</td><td>प्रदर्शन</td></tr>
+  </tbody>
+</table>
+
+
+    <footer class="card" style="margin-top:18px">
+      <strong>Word Formation</strong> — शब्द निर्माण की यह संक्षिप्त गाइड परीक्षा और पढ़ाई दोनों के लिए उपयोगी है।
+    </footer>
+
+    <div class="watermark">bhoopendra educational</div>
+  </div>
+
+  <script>
+    function copyContent(){
+      const html = document.documentElement.outerHTML;
+      navigator.clipboard?.writeText(html).then(()=>{
+        alert('Page HTML copied to clipboard — ab aap ise apne editor mein paste kar sakte hain.');
+      }).catch(()=>{
+        alert('Clipboard access failed — page ko manually select karke copy karen.');
+      })
+    }
+  </script>
+</body>
+</html>
