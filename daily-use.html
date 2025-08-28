@@ -1,104 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily Use Sentences — Bhoopendra Educational</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Daily Use Sentences</title>
   <style>
-    :root{
-      --bg: #f4fbff;
-      --card: #ffffff;
-      --accent: #0666d6;
-      --muted: #6b7280;
-      --glass: rgba(255,255,255,0.6);
-      --shadow: 0 8px 24px rgba(7,13,32,0.08);
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0; min-height:100vh; background:linear-gradient(180deg,var(--bg), #eaf6ff); color:#0b1220; padding:32px; display:flex; align-items:flex-start; justify-content:center;
+    h1 {
+      text-align: center;
+      color: #2c3e50;
     }
-    .container{width:100%; max-width:900px}
-    header{display:flex; gap:16px; align-items:center; margin-bottom:18px}
-    .logo{background:var(--card); padding:12px 14px; border-radius:12px; box-shadow:var(--shadow); display:flex; align-items:center; gap:12px}
-    .logo h1{font-size:18px;margin:0}
-    .meta{margin-left:auto; text-align:right}
-    .meta p{margin:0; font-size:13px; color:var(--muted)}
-
-    .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
-    @media (max-width:720px){.grid{grid-template-columns:1fr}}
-
-    .card{background:var(--card); padding:18px; border-radius:14px; box-shadow:var(--shadow);}
-    .card h2{margin:0 0 8px 0; font-size:16px}
-    .sentence{display:flex; gap:12px; align-items:flex-start; padding:10px 8px; border-radius:8px; transition:background .15s}
-    .sentence:hover{background:var(--glass)}
-    .eng{flex:1; font-weight:600}
-    .hin{flex:1; color:var(--muted); font-family:'Noto Sans Devanagari', 'Inter', sans-serif}
-    .copy{background:transparent;border:1px solid #e6eefc;padding:6px 8px;border-radius:8px; cursor:pointer}
-
-    footer{margin-top:18px; display:flex; justify-content:space-between; align-items:center; gap:12px}
-    .watermark{font-size:13px; color:var(--muted)}
-    .controls{display:flex; gap:8px}
-    .btn{background:var(--accent); color:white; border:none; padding:8px 12px; border-radius:10px; cursor:pointer}
-    .btn.secondary{background:transparent; color:var(--accent); border:1px solid rgba(6,102,214,0.14)}
-
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    caption {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-     
-          <h1>Bhoopendra Educational</h1>
-          <div style="font-size:12px;color:var(--muted)">Daily Use English Sentences — हिंदी अर्थ सहित</div>
-        </div>
-      </div>
-     
-    </header>
 
-    <main class="grid">
-      <section class="card">
-        <h2>🔹 Greetings (नमस्ते/अभिवादन)</h2>
-        <div class="sentence"><div class="eng">1. Good morning!</div><div class="hin">सुप्रभात!</div><button class="copy" data-text="Good morning!">Copy</button></div>
-        <div class="sentence"><div class="eng">2. How are you?</div><div class="hin">आप कैसे हैं?</div><button class="copy" data-text="How are you?">Copy</button></div>
-        <div class="sentence"><div class="eng">3. I’m fine, thank you.</div><div class="hin">मैं ठीक हूँ, धन्यवाद।</div><button class="copy" data-text="I'm fine, thank you.">Copy</button></div>
-        <div class="sentence"><div class="eng">4. What’s your name?</div><div class="hin">आपका नाम क्या है?</div><button class="copy" data-text="What's your name?">Copy</button></div>
-        <div class="sentence"><div class="eng">5. Nice to meet you.</div><div class="hin">आपसे मिलकर खुशी हुई।</div><button class="copy" data-text="Nice to meet you.">Copy</button></div>
-      </section>
+  <h1>Daily Use Sentences (English - Hindi)</h1>
 
-      <section class="card">
-        <h2>🔹 At Home (घर पर)</h2>
-        <div class="sentence"><div class="eng">6. Please close the door.</div><div class="hin">कृपया दरवाज़ा बंद कर दीजिए।</div><button class="copy" data-text="Please close the door.">Copy</button></div>
-        <div class="sentence"><div class="eng">7. Have you eaten?</div><div class="hin">क्या आपने खाना खा लिया?</div><button class="copy" data-text="Have you eaten?">Copy</button></div>
-        <div class="sentence"><div class="eng">8. Don’t make noise.</div><div class="hin">शोर मत करो।</div><button class="copy" data-text="Don't make noise.">Copy</button></div>
-        <div class="sentence"><div class="eng">9. Switch off the light.</div><div class="hin">लाइट बंद कर दो।</div><button class="copy" data-text="Switch off the light.">Copy</button></div>
-        <div class="sentence"><div class="eng">10. Come here.</div><div class="hin">यहाँ आओ।</div><button class="copy" data-text="Come here.">Copy</button></div>
-      </section>
+  <table>
+    <caption>🗣️ Common Sentences</caption>
+    <tr>
+      <th>English</th>
+      <th>Hindi</th>
+    </tr>
+    <tr><td>How are you?</td><td>आप कैसे हैं?</td></tr>
+    <tr><td>I am fine.</td><td>मैं ठीक हूँ।</td></tr>
+    <tr><td>What is your name?</td><td>आपका नाम क्या है?</td></tr>
+    <tr><td>My name is Rahul.</td><td>मेरा नाम राहुल है।</td></tr>
+    <tr><td>Where are you going?</td><td>आप कहाँ जा रहे हैं?</td></tr>
+    <tr><td>I am going to the market.</td><td>मैं बाजार जा रहा हूँ।</td></tr>
+    <tr><td>What do you do?</td><td>आप क्या करते हैं?</td></tr>
+    <tr><td>I am a student.</td><td>मैं छात्र हूँ।</td></tr>
+    <tr><td>Can you help me?</td><td>क्या आप मेरी मदद कर सकते हैं?</td></tr>
+    <tr><td>Yes, of course.</td><td>हाँ, बिल्कुल।</td></tr>
+    <tr><td>No problem.</td><td>कोई बात नहीं।</td></tr>
+    <tr><td>Thank you very much.</td><td>बहुत धन्यवाद।</td></tr>
+    <tr><td>You’re welcome.</td><td>आपका स्वागत है।</td></tr>
+    <tr><td>What time is it?</td><td>समय क्या हुआ है?</td></tr>
+    <tr><td>It’s 5 o’clock.</td><td>पाँच बजे हैं।</td></tr>
+    <tr><td>I am hungry.</td><td>मुझे भूख लगी है।</td></tr>
+    <tr><td>Let’s eat something.</td><td>चलो कुछ खाते हैं।</td></tr>
+    <tr><td>This is my house.</td><td>यह मेरा घर है।</td></tr>
+    <tr><td>Do you speak English?</td><td>क्या आप अंग्रेज़ी बोलते हैं?</td></tr>
+    <tr><td>Just a little.</td><td>थोड़ा बहुत।</td></tr>
+  </table>
 
-      <section class="card">
-        <h2>🔹 Daily Talk (रोज़मर्रा की बातें)</h2>
-        <div class="sentence"><div class="eng">11. Where are you going?</div><div class="hin">आप कहाँ जा रहे हैं?</div><button class="copy" data-text="Where are you going?">Copy</button></div>
-        <div class="sentence"><div class="eng">12. Wait for me.</div><div class="hin">मेरा इंतज़ार करो।</div><button class="copy" data-text="Wait for me.">Copy</button></div>
-        <div class="sentence"><div class="eng">13. I’ll be back soon.</div><div class="hin">मैं जल्दी लौट आऊँगा।</div><button class="copy" data-text="I'll be back soon.">Copy</button></div>
-        <div class="sentence"><div class="eng">14. Take care.</div><div class="hin">अपना ख्याल रखना।</div><button class="copy" data-text="Take care.">Copy</button></div>
-        <div class="sentence"><div class="eng">15. What happened?</div><div class="hin">क्या हुआ?</div><button class="copy" data-text="What happened?">Copy</button></div>
-      </section>
-
-      <section class="card">
-        <h2>🔹 Outside (बाहर)</h2>
-        <div class="sentence"><div class="eng">16. How much is this?</div><div class="hin">यह कितने का है?</div><button class="copy" data-text="How much is this?">Copy</button></div>
-        <div class="sentence"><div class="eng">17. Give me some water.</div><div class="hin">मुझे थोड़ा पानी दो।</div><button class="copy" data-text="Give me some water.">Copy</button></div>
-        <div class="sentence"><div class="eng">18. I am feeling tired.</div><div class="hin">मैं थक गया हूँ।</div><button class="copy" data-text="I am feeling tired.">Copy</button></div>
-        <div class="sentence"><div class="eng">19. I don’t understand.</div><div class="hin">मुझे समझ नहीं आया।</div><button class="copy" data-text="I don't understand.">Copy</button></div>
-        <div class="sentence"><div class="eng">20. Can you help me?</div><div class="hin">क्या आप मेरी मदद कर सकते हैं?</div><button class="copy" data-text="Can you help me?">Copy</button></div>
-      </section>
-    </main>
-
-   
-  </div>
-
- 
 </body>
 </html>
