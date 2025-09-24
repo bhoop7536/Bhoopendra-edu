@@ -1,1 +1,209 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Vocabulary — मूल शब्दावली</title>
+  <style>
+    :root{
+      --bg:#f6fbff; /* light ocean blue */
+      --card:#ffffff;
+      --accent:#0b74de;
+      --accent-2:#0a63b8;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, 'Noto Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(180deg,var(--bg),#e9f4ff 70%);
+      padding:32px;
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+    }
 
+    .container{max-width:960px;margin:0 auto}
+
+    header{
+      display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:20px;
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(11,116,222,0.18)
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted)}
+
+    .controls{display:flex;gap:12px;align-items:center}
+    .search{padding:10px 12px;border-radius:10px;border:1px solid rgba(11,116,222,0.12);background:var(--card);min-width:220px}
+    .toggle{display:flex;gap:6px;align-items:center;background:transparent;border:none;font-weight:600;color:var(--accent);cursor:pointer}
+
+    main{margin-top:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+
+    .card{
+      background:var(--card);
+      border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(16,24,40,0.06);display:flex;flex-direction:column;gap:8px;transition:transform .15s ease,box-shadow .15s ease
+    }
+    .card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(16,24,40,0.08)}
+    .term{display:flex;align-items:center;justify-content:space-between}
+    .term h3{margin:0;font-size:16px}
+    .badge{font-size:12px;padding:6px 8px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff}
+    .meaning{color:var(--muted);font-size:14px;margin-bottom:6px}
+
+    .actions{display:flex;gap:8px}
+    button.action{border:1px solid rgba(11,116,222,0.12);background:var(--glass);padding:8px 10px;border-radius:8px;cursor:pointer;font-weight:600}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* small responsive tweaks */
+    @media (max-width:520px){
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      .search{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">BV</div>
+        <div>
+          <h1>Business Vocabulary — मूल शब्दावली</h1>
+          <p class="lead">Basic business words with Hindi meanings — पढ़ें, सर्च करें और सुनें।</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="search" class="search" placeholder="Search (e.g. profit, ग्राहक)..." aria-label="search vocabulary">
+        <button id="langToggle" class="toggle" title="Toggle language">हिंदी दिखाएँ</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="grid" class="grid" role="list">
+        <!-- cards injected by JS -->
+      </div>
+    </main>
+
+    <footer>
+      Tip: Type in the search box to filter terms. Click 🔊 to hear pronunciation (browser support varies).
+    </footer>
+  </div>
+
+  <script>
+    // Data: English term + Hindi meaning
+    const vocab = [
+      {en:'Business', hi:'व्यापार / व्यवसाय'},
+      {en:'Profit', hi:'लाभ'},
+      {en:'Loss', hi:'हानि'},
+      {en:'Customer', hi:'ग्राहक'},
+      {en:'Supplier', hi:'आपूर्तिकर्ता'},
+      {en:'Revenue', hi:'आय'},
+      {en:'Expense', hi:'खर्च'},
+      {en:'Market', hi:'बाजार'},
+      {en:'Price', hi:'मूल्य'},
+      {en:'Product', hi:'उत्पाद'},
+      {en:'Service', hi:'सेवा'},
+      {en:'Company', hi:'कंपनी / संस्था'},
+      {en:'Employee', hi:'कर्मचारी'},
+      {en:'Employer', hi:'नियोक्ता'},
+      {en:'Salary', hi:'वेतन'}
+    ];
+
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+    const langToggle = document.getElementById('langToggle');
+    let showHindi = true; // default shows Hindi meaning
+
+    function render(list){
+      grid.innerHTML = '';
+      list.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.setAttribute('role','listitem');
+
+        const termRow = document.createElement('div'); termRow.className='term';
+        const h = document.createElement('h3'); h.textContent = item.en;
+        const badge = document.createElement('div'); badge.className='badge'; badge.textContent = item.en.slice(0,2).toUpperCase();
+        termRow.appendChild(h); termRow.appendChild(badge);
+
+        const meaning = document.createElement('div'); meaning.className='meaning';
+        meaning.textContent = showHindi ? item.hi : item.en;
+
+        const actions = document.createElement('div'); actions.className='actions';
+
+        // copy button
+        const copyBtn = document.createElement('button'); copyBtn.className='action'; copyBtn.textContent='Copy';
+        copyBtn.addEventListener('click', ()=>{
+          const text = showHindi ? `${item.en} — ${item.hi}` : `${item.en}`;
+          navigator.clipboard?.writeText(text).then(()=>{
+            copyBtn.textContent='Copied!';
+            setTimeout(()=> copyBtn.textContent='Copy',900);
+          }).catch(()=>{
+            alert('Copy failed — allow clipboard permission');
+          });
+        });
+
+        // pronounce button
+        const speakBtn = document.createElement('button'); speakBtn.className='action'; speakBtn.textContent='🔊';
+        speakBtn.title = 'Pronounce';
+        speakBtn.addEventListener('click', ()=>{
+          const utter = new SpeechSynthesisUtterance(showHindi ? item.hi : item.en);
+          // try to pick appropriate voice
+          const voices = speechSynthesis.getVoices();
+          // prefer Hindi if showing Hindi
+          if(showHindi){
+            const v = voices.find(x=>/hi|hindi/i.test(x.lang)) || voices.find(x=>/en/i.test(x.lang));
+            if(v) utter.voice = v;
+            utter.lang = 'hi-IN';
+          } else {
+            const v = voices.find(x=>/en-US|en-GB|en/i.test(x.lang));
+            if(v) utter.voice = v;
+            utter.lang = 'en-US';
+          }
+          speechSynthesis.cancel();
+          speechSynthesis.speak(utter);
+        });
+
+        actions.appendChild(copyBtn);
+        actions.appendChild(speakBtn);
+
+        card.appendChild(termRow);
+        card.appendChild(meaning);
+        card.appendChild(actions);
+
+        grid.appendChild(card);
+      });
+    }
+
+    // initial render
+    render(vocab);
+
+    // search handler
+    search.addEventListener('input', ()=>{
+      const q = search.value.trim().toLowerCase();
+      if(!q){ render(vocab); return }
+      const filtered = vocab.filter(it => it.en.toLowerCase().includes(q) || it.hi.toLowerCase().includes(q));
+      render(filtered);
+    });
+
+    // lang toggle
+    langToggle.addEventListener('click', ()=>{
+      showHindi = !showHindi;
+      langToggle.textContent = showHindi ? 'हिंदी दिखाएँ' : 'English दिखाएँ';
+      // re-render with same search filter
+      const q = search.value.trim().toLowerCase();
+      const list = q ? vocab.filter(it => it.en.toLowerCase().includes(q) || it.hi.toLowerCase().includes(q)) : vocab;
+      render(list);
+    });
+
+    // improve voice list load on some browsers
+    if(typeof speechSynthesis !== 'undefined'){
+      speechSynthesis.onvoiceschanged = ()=>{/* noop to trigger voice load */};
+    }
+  </script>
+</body>
+</html>
