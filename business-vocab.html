@@ -77,6 +77,12 @@
       </div>
 
       <div class="controls">
+        <select id="levelFilter" class="search" aria-label="filter level">
+          <option value="all">All Levels</option>
+          <option value="basic">Basic</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
         <input id="search" class="search" placeholder="Search (e.g. profit, ग्राहक)..." aria-label="search vocabulary">
         <button id="langToggle" class="toggle" title="Toggle language">हिंदी दिखाएँ</button>
       </div>
@@ -94,39 +100,57 @@
   </div>
 
   <script>
-    // Data: English term + Hindi meaning
+    // Data: English term + Hindi meaning with level
     const vocab = [
-      {en:'Business', hi:'व्यापार / व्यवसाय'},
-      {en:'Profit', hi:'लाभ'},
-      {en:'Loss', hi:'हानि'},
-      {en:'Customer', hi:'ग्राहक'},
-      {en:'Supplier', hi:'आपूर्तिकर्ता'},
-      {en:'Revenue', hi:'आय'},
-      {en:'Expense', hi:'खर्च'},
-      {en:'Market', hi:'बाजार'},
-      {en:'Price', hi:'मूल्य'},
-      {en:'Product', hi:'उत्पाद'},
-      {en:'Service', hi:'सेवा'},
-      {en:'Company', hi:'कंपनी / संस्था'},
-      {en:'Employee', hi:'कर्मचारी'},
-      {en:'Employer', hi:'नियोक्ता'},
-      {en:'Salary', hi:'वेतन'},
-     
-{en:'Turnover', hi:'कारोबार / कुल बिक्री', level:'intermediate'},
-{en:'Investment', hi:'निवेश', level:'intermediate'},
-{en:'Capital', hi:'पूंजी', level:'intermediate'},
-{en:'Share', hi:'शेयर / हिस्सा', level:'intermediate'},
-{en:'Stock Market', hi:'शेयर बाजार', level:'intermediate'},
-{en:'Partnership', hi:'साझेदारी', level:'intermediate'},
-{en:'Entrepreneur', hi:'उद्यमी', level:'intermediate'},
-{en:'Startup', hi:'नया व्यवसाय', level:'intermediate'},
-{en:'Negotiation', hi:'सौदेबाज़ी', level:'intermediate'},
-{en:'Contract', hi:'अनुबंध', level:'intermediate'},
-{en:'Brand', hi:'ब्रांड / नाम', level:'intermediate'},
-{en:'Consumer', hi:'उपभोक्ता', level:'intermediate'},
-{en:'Strategy', hi:'रणनीति', level:'intermediate'},
-{en:'Competition', hi:'प्रतिस्पर्धा', level:'intermediate'},
-{en:'Growth', hi:'वृद्धि', level:'intermediate'}
+      {en:'Business', hi:'व्यापार / व्यवसाय', level:'basic'},
+      {en:'Profit', hi:'लाभ', level:'basic'},
+      {en:'Loss', hi:'हानि', level:'basic'},
+      {en:'Customer', hi:'ग्राहक', level:'basic'},
+      {en:'Supplier', hi:'आपूर्तिकर्ता', level:'basic'},
+      {en:'Revenue', hi:'आय', level:'basic'},
+      {en:'Expense', hi:'खर्च', level:'basic'},
+      {en:'Market', hi:'बाजार', level:'basic'},
+      {en:'Price', hi:'मूल्य', level:'basic'},
+      {en:'Product', hi:'उत्पाद', level:'basic'},
+      {en:'Service', hi:'सेवा', level:'basic'},
+      {en:'Company', hi:'कंपनी / संस्था', level:'basic'},
+      {en:'Employee', hi:'कर्मचारी', level:'basic'},
+      {en:'Employer', hi:'नियोक्ता', level:'basic'},
+      {en:'Salary', hi:'वेतन', level:'basic'},
+
+      // Intermediate vocabulary
+      {en:'Turnover', hi:'कारोबार / कुल बिक्री', level:'intermediate'},
+      {en:'Investment', hi:'निवेश', level:'intermediate'},
+      {en:'Capital', hi:'पूंजी', level:'intermediate'},
+      {en:'Share', hi:'शेयर / हिस्सा', level:'intermediate'},
+      {en:'Stock Market', hi:'शेयर बाजार', level:'intermediate'},
+      {en:'Partnership', hi:'साझेदारी', level:'intermediate'},
+      {en:'Entrepreneur', hi:'उद्यमी', level:'intermediate'},
+      {en:'Startup', hi:'नया व्यवसाय', level:'intermediate'},
+      {en:'Negotiation', hi:'सौदेबाज़ी', level:'intermediate'},
+      {en:'Contract', hi:'अनुबंध', level:'intermediate'},
+      {en:'Brand', hi:'ब्रांड / नाम', level:'intermediate'},
+      {en:'Consumer', hi:'उपभोक्ता', level:'intermediate'},
+      {en:'Strategy', hi:'रणनीति', level:'intermediate'},
+      {en:'Competition', hi:'प्रतिस्पर्धा', level:'intermediate'},
+      {en:'Growth', hi:'वृद्धि', level:'intermediate'},
+
+      // Advanced vocabulary
+      {en:'Merger', hi:'विलय (दो कंपनियों का मिलना)', level:'advanced'},
+      {en:'Acquisition', hi:'अधिग्रहण (एक कंपनी का दूसरी को खरीदना)', level:'advanced'},
+      {en:'Equity', hi:'इक्विटी / स्वामित्व पूंजी', level:'advanced'},
+      {en:'Liability', hi:'देयता / ऋण', level:'advanced'},
+      {en:'Assets', hi:'संपत्ति', level:'advanced'},
+      {en:'ROI (Return on Investment)', hi:'निवेश पर प्रतिफल', level:'advanced'},
+      {en:'Cash Flow', hi:'नकद प्रवाह', level:'advanced'},
+      {en:'Monopoly', hi:'एकाधिकार', level:'advanced'},
+      {en:'Outsourcing', hi:'बाहरी सेवाएँ लेना', level:'advanced'},
+      {en:'Franchise', hi:'फ्रेंचाइज़ / शाखा अधिकार', level:'advanced'},
+      {en:'Supply Chain', hi:'आपूर्ति श्रृंखला', level:'advanced'},
+      {en:'Risk Management', hi:'जोखिम प्रबंधन', level:'advanced'},
+      {en:'Human Resources (HR)', hi:'मानव संसाधन विभाग', level:'advanced'},
+      {en:'Corporate Social Responsibility (CSR)', hi:'कॉर्पोरेट सामाजिक ज़िम्मेदारी', level:'advanced'},
+      {en:'Globalization', hi:'वैश्वीकरण', level:'advanced'}
     ];
 
     const grid = document.getElementById('grid');
