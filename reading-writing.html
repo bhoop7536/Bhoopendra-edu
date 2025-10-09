@@ -152,7 +152,14 @@
             </div>
           </div>
         `;
-        el.addEventListener('click',()=>openModal(t));
+    /*    el.addEventListener('click',()=>openModal(t)); */ 
+        el.addEventListener('click',()=>{
+  if(t.links.length > 0){
+    window.open(t.links[0].url, "_blank"); // naya tab open karega
+  }
+});
+
+        
         grid.appendChild(el);
       });
     }
