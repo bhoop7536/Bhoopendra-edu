@@ -188,27 +188,7 @@
     // initial render
     render(topics);
   </script>
-function render(list){
-  grid.innerHTML='';
-  list.forEach(t=>{
-    const el = document.createElement('article');
-    el.className='card';
-    el.innerHTML = `
-      <span class="kicker">${t.type}</span>
-      <h3>${t.title}</h3>
-      <p>${t.desc}</p>
-      <div class="link-row">
-        <div style="font-size:12px;color:rgba(230,238,248,0.6)">ID: ${t.id}</div>
-        <div>
-          <button class="link-btn" data-id="${t.id}">Details</button>
-          <a class="link-btn primary" href="${t.links[0].url}" onclick="event.stopPropagation()">Practice</a>
-        </div>
-      </div>
-    `;
-    el.addEventListener('click',()=>openModal(t));  // ⚠️ Yahi problem hai
-    grid.appendChild(el);
-  });
-}
+
 
 </body>
 </html>
