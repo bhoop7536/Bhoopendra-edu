@@ -1,202 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Reading & Writing — Topic Cards</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg1: linear-gradient(135deg,#0f172a 0%,#0b2545 50%, #05243a 100%);
-      --card-bg: rgba(255,255,255,0.06);
-      --glass: rgba(255,255,255,0.04);
-      --accent: linear-gradient(90deg,#7c3aed,#06b6d4);
-      --glass-border: rgba(255,255,255,0.08);
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;padding:32px;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg1);color:#e6eef8;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic Details</title>
 
-    .container{max-width:1100px;margin:0 auto}
-
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    .title{display:flex;gap:14px;align-items:center}
-    .logo{
-      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:grid;place-items:center;font-weight:800;color:#021124;font-size:20px;box-shadow:0 6px 18px rgba(7,12,30,0.6)
-    }
-    h1{margin:0;font-size:20px}
-    p.lead{margin:0;color:rgba(230,238,248,0.75)}
-
-    .controls{display:flex;gap:12px;align-items:center}
-    .search{padding:10px 12px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);outline:none;color:inherit;width:220px}
-    .toggle{background:transparent;border:1px solid var(--glass-border);padding:8px 12px;border-radius:10px;cursor:pointer}
-
-    /* grid */
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:22px}
-
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      border:1px solid rgba(255,255,255,0.05);
-      padding:18px;border-radius:14px;backdrop-filter:blur(6px);
-      transition:transform .26s ease, box-shadow .26s ease;
-      cursor:pointer;display:flex;flex-direction:column;gap:10px;min-height:120px;
-    }
-    .card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
-
-    .card .kicker{display:inline-block;padding:6px 10px;border-radius:999px;font-size:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03)}
-    .card h3{margin:0;font-size:16px}
-    .card p{margin:0;color:rgba(230,238,248,0.7);font-size:13px}
-
-    .card .link-row{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
-    .link-btn{padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);font-weight:600;cursor:pointer}
-    .link-btn.primary{background:var(--accent);color:#021124;border:0}
-
-    footer{margin-top:26px;color:rgba(230,238,248,0.6);font-size:13px;display:flex;justify-content:space-between}
-
-    /* Modal */
-    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:24px}
-    .modal.open{display:flex}
-    .modal-card{width:100%;max-width:720px;background:linear-gradient(180deg,#041029 0%, #08263a 100%);border-radius:14px;padding:20px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 30px 80px rgba(2,6,23,0.6)}
-    .modal-card h2{margin-top:0}
-    .close{background:transparent;border:0;color:rgba(230,238,248,0.8);font-weight:700;padding:6px 10px;border-radius:8px;cursor:pointer}
-
-    @media (max-width:520px){.title p.lead{display:none}.search{width:140px}}
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:linear-gradient(135deg,#0f172a,#08263a);
+  color:white;
+  padding:40px;
+}
+.box{
+  max-width:800px;
+  margin:auto;
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:12px;
+}
+a.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 16px;
+  background:linear-gradient(90deg,#7c3aed,#06b6d4);
+  color:black;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="title">
-        <div class="logo">RW</div>
-        <div>
-          <h1>Reading & Writing — Topic Cards</h1>
-          <p class="lead">Select a card to view short description and quick links for practice.</p>
-        </div>
-      </div>
 
-      <div class="controls">
-        <input id="q" class="search" placeholder="Search topics..." />
-        <button id="reset" class="toggle" title="Show All">Reset</button>
-      </div>
-    </header>
+<div class="box">
+<h1 id="title">Loading...</h1>
+<p id="desc"></p>
 
-    <main>
-      <div id="grid" class="grid"></div>
-    </main>
+<a href="reading-writing.html" class="btn">⬅ Back</a>
+</div>
 
-    <footer>
-      <div>Made for bhoopendraeducational.com</div>
-      <div>Tip: Type to filter • Click card for details</div>
-    </footer>
-  </div>
+<script>
 
-  <!-- Modal -->
-  <div id="modal" class="modal" role="dialog" aria-hidden="true">
-    <div class="modal-card">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <h2 id="m-title">Topic</h2>
-        <button class="close" id="m-close">Close</button>
-      </div>
-      <p id="m-desc" style="color:rgba(230,238,248,0.8)"></p>
-      <div id="m-links" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"></div>
-    </div>
-  </div>
+const topics = {
 
-  <script>
-    const topics = [
-      {id:'rc',type:'Reading',title:'Reading Comprehension',kicker:'Passage',desc:'Practice long and short passages with questions on main idea, tone, vocabulary, and inference.',links:[{t:'Practice Passage',url:'#'}]},
-      {id:'pc',type:'Reading',title:'Passage Completion',kicker:'Fill',desc:'Complete missing lines in passages — tests coherence and vocabulary in context.',links:[{t:'Try Exercises',url:'#'}]},
-      {id:'ct',type:'Reading',title:'Cloze Test',kicker:'Grammar',desc:'Multiple blanks in a passage; select the best word for each blank.',links:[{t:'Cloze Tests',url:'#'}]},
-      {id:'sr',type:'Reading',title:'Sentence Rearrangement / Para Jumbles',kicker:'Order',desc:'Reorder sentences to form a coherent paragraph.',links:[{t:'Para Jumbles',url:'#'}]},
-      {id:'syn',type:'Reading',title:'Synonyms & Antonyms in Context',kicker:'Vocab',desc:'Practice words with contextual synonyms and antonyms.',links:[{t:'Word Lists',url:'#'}]},
-      {id:'inf',type:'Reading',title:'Inference Based Questions',kicker:'Inference',desc:'Questions that require reading between the lines.',links:[{t:'Inference Drills',url:'#'}]},
-      {id:'fv',type:'Reading',title:'Fact vs Opinion',kicker:'Critical',desc:'Differentiate statements of fact from subjective opinion.',links:[{t:'Exercises',url:'#'}]},
-      {id:'cr',type:'Reading',title:'Critical Reading',kicker:'Analysis',desc:'Analyze arguments, assumptions and evaluate evidence.',links:[{t:'Critical Passages',url:'#'}]},
+rc:{
+title:"Reading Comprehension",
+desc:"Practice long and short passages with questions on main idea, tone, vocabulary, and inference."
+},
 
-      {id:'ew',type:'Writing',title:'Essay Writing',kicker:'Essay',desc:'Structure, thesis, introduction-body-conclusion and practice prompts across topics.',links:[{t:'Prompts',url:'#'},{t:'Sample Essays',url:'#'}]},
-      {id:'lw',type:'Writing',title:'Letter Writing (Formal & Informal)',kicker:'Letters',desc:'Formats for formal letters, applications and informal personal letters.',links:[{t:'Formats',url:'#'}]},
-      {id:'rw',type:'Writing',title:'Report Writing',kicker:'Report',desc:'How to write clear and concise reports — headings, purpose, findings.',links:[{t:'Report Samples',url:'#'}]},
-      {id:'nw',type:'Writing',title:'Notice Writing',kicker:'Notice',desc:'Short public notices: format, language and examples.',links:[{t:'Notices',url:'#'}]},
-      {id:'aw',type:'Writing',title:'Article Writing',kicker:'Article',desc:'Structure of articles, lead, body, supporting evidence and conclusion.',links:[{t:'Article Tips',url:'#'}]},
-      {id:'sw',type:'Writing',title:'Story Writing',kicker:'Story',desc:'Plot, character, setting and dialogues — creative writing practice.',links:[{t:'Story Prompts',url:'#'}]},
-      {id:'pw',type:'Writing',title:'Precis Writing',kicker:'Precis',desc:'Shortening long passages while keeping main ideas intact.',links:[{t:'Precis Practice',url:'#'}]},
-      {id:'dw',type:'Writing',title:'Dialogue Writing',kicker:'Dialogue',desc:'Writing realistic dialogues for plays, stories and interviews.',links:[{t:'Dialogue Examples',url:'#'}]}
-    ];
+pc:{
+title:"Passage Completion",
+desc:"Complete missing lines in passages — tests coherence and vocabulary in context."
+},
 
-    const grid = document.getElementById('grid');
-    const q = document.getElementById('q');
-    const reset = document.getElementById('reset');
-    const modal = document.getElementById('modal');
-    const mTitle = document.getElementById('m-title');
-    const mDesc = document.getElementById('m-desc');
-    const mLinks = document.getElementById('m-links');
-    const mClose = document.getElementById('m-close');
+ct:{
+title:"Cloze Test",
+desc:"Multiple blanks in a passage; select the best word for each blank."
+},
 
-    function render(list){
-      grid.innerHTML='';
-      list.forEach(t=>{
-        const el = document.createElement('article');
-        el.className='card';
-        el.innerHTML = `
-          <span class="kicker">${t.type}</span>
-          <h3>${t.title}</h3>
-          <p>${t.desc}</p>
-          <div class="link-row">
-            <div style="font-size:12px;color:rgba(230,238,248,0.6)">ID: ${t.id}</div>
-            <div>
-              <button class="link-btn" data-id="${t.id}">Details</button>
-              <a class="link-btn primary" href="${t.links[0].url}" onclick="event.stopPropagation()">Practice</a>
-            </div>
-          </div>
-        `;
-    /*    el.addEventListener('click',()=>openModal(t)); */ 
-        el.addEventListener('click',()=>{
-  if(t.links.length > 0){
-    window.open(t.links[0].url, "_blank"); // naya tab open karega
-  }
-});
+sr:{
+title:"Sentence Rearrangement / Para Jumbles",
+desc:"Reorder sentences to form a coherent paragraph."
+},
 
-        
-        grid.appendChild(el);
-      });
-    }
+syn:{
+title:"Synonyms & Antonyms in Context",
+desc:"Practice words with contextual synonyms and antonyms."
+},
 
-    function openModal(t){
-      mTitle.textContent = t.title;
-      mDesc.textContent = t.desc + ' — Click the links below to go to practice pages or worksheets.';
-      mLinks.innerHTML = '';
-      t.links.forEach(l=>{
-        const a = document.createElement('a');
-        a.href = l.url;
-        a.textContent = l.t;
-        a.className = 'link-btn';
-        a.style.textDecoration='none';
-        a.addEventListener('click', e=>{ e.stopPropagation(); /* placeholder */ });
-        mLinks.appendChild(a);
-      });
-      modal.classList.add('open');
-      modal.setAttribute('aria-hidden','false');
-    }
+inf:{
+title:"Inference Based Questions",
+desc:"Questions that require reading between the lines."
+},
 
-    mClose.addEventListener('click', ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); });
-    modal.addEventListener('click',(e)=>{ if(e.target===modal){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }});
+fv:{
+title:"Fact vs Opinion",
+desc:"Differentiate statements of fact from subjective opinion."
+},
 
-    q.addEventListener('input', ()=>{
-      const v = q.value.trim().toLowerCase();
-      const filtered = topics.filter(t=> (t.title+' '+t.type+' '+t.desc).toLowerCase().includes(v));
-      render(filtered);
-    });
+cr:{
+title:"Critical Reading",
+desc:"Analyze arguments, assumptions and evaluate evidence."
+},
 
-    reset.addEventListener('click', ()=>{ q.value=''; render(topics); });
+ew:{
+title:"Essay Writing",
+desc:"Structure, thesis, introduction-body-conclusion and practice prompts."
+},
 
-    // initial render
-    render(topics);
-  </script>
+lw:{
+title:"Letter Writing",
+desc:"Formats for formal letters, applications and informal letters."
+},
 
+rw:{
+title:"Report Writing",
+desc:"How to write clear and concise reports."
+},
+
+nw:{
+title:"Notice Writing",
+desc:"Short public notices: format and examples."
+},
+
+aw:{
+title:"Article Writing",
+desc:"Structure of articles and conclusion writing."
+},
+
+sw:{
+title:"Story Writing",
+desc:"Plot, character, setting and dialogues."
+},
+
+pw:{
+title:"Precis Writing",
+desc:"Shortening long passages while keeping main ideas intact."
+},
+
+dw:{
+title:"Dialogue Writing",
+desc:"Writing realistic dialogues for plays and stories."
+}
+
+};
+
+
+// URL se id lena
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+if(topics[id]){
+document.getElementById("title").innerText = topics[id].title;
+document.getElementById("desc").innerText = topics[id].desc;
+}else{
+document.getElementById("title").innerText="Topic not found";
+}
+
+</script>
 
 </body>
 </html>
-
