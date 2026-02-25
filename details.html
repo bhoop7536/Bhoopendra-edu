@@ -2,33 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Topic Details</title>
+<title>UPSC Reading Comprehension</title>
 
 <style>
 body{
 font-family:Arial, sans-serif;
 background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
-padding:40px;
-margin:0;
+padding:40px;margin:0;
 }
 .card{
-max-width:850px;
-margin:auto;
-background:#1e293b;
-padding:35px;
-border-radius:14px;
+max-width:900px;margin:auto;background:#1e293b;
+padding:35px;border-radius:14px;
 box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
-h1{margin-top:0;font-size:32px;color:#38bdf8;}
-h3{color:#facc15;margin-top:30px;}
-p{line-height:1.7;font-size:17px;}
+h1{color:#38bdf8;margin-top:0}
 .section{
-background:#0f172a;
-padding:18px;
-margin-top:20px;
-border-radius:10px;
-border-left:4px solid #38bdf8;
+background:#0f172a;padding:20px;margin-top:25px;
+border-radius:10px;border-left:4px solid #38bdf8;
+}
+h3{color:#facc15}
+button{
+margin-top:10px;padding:8px 16px;
+background:#38bdf8;border:none;border-radius:6px;
+cursor:pointer;font-weight:bold;
+}
+.answer{
+display:none;
+margin-top:12px;
+background:#020617;
+padding:15px;
+border-radius:8px;
+border:1px solid #38bdf8;
 }
 </style>
 </head>
@@ -36,84 +41,90 @@ border-left:4px solid #38bdf8;
 <body>
 
 <div class="card">
-<h1 id="title">Loading...</h1>
-<p id="desc"></p>
-<div id="content"></div>
+<h1>UPSC Reading Comprehension</h1>
+
+<!-- COMPREHENSION 1 -->
+<div class="section">
+<h3>Passage 1</h3>
+
+<p>
+Democracy is not merely a form of government; it is primarily a mode of
+associated living, of conjoint communicated experience. It emphasizes
+participation, equality, and responsibility among citizens.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>According to the passage, democracy is primarily what?</li>
+<li>Name two values emphasized in democracy.</li>
+</ol>
+
+<button onclick="toggleAns(1)">Show Answer</button>
+
+<div id="ans1" class="answer">
+1️⃣ Democracy is a mode of associated living.<br>
+2️⃣ Participation and equality (also responsibility).
 </div>
+</div>
+
+
+<!-- COMPREHENSION 2 -->
+<div class="section">
+<h3>Passage 2</h3>
+
+<p>
+Economic growth without environmental sustainability can lead to long-term
+damage. Development policies must balance industrial progress with ecological
+protection.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>What problem can economic growth cause?</li>
+<li>What should development policies balance?</li>
+</ol>
+
+<button onclick="toggleAns(2)">Show Answer</button>
+
+<div id="ans2" class="answer">
+1️⃣ Long-term environmental damage.<br>
+2️⃣ Industrial progress and ecological protection.
+</div>
+</div>
+
+
+<!-- COMPREHENSION 3 -->
+<div class="section">
+<h3>Passage 3</h3>
+
+<p>
+Education plays a crucial role in shaping an individual’s personality and
+critical thinking ability. It empowers citizens to make informed decisions
+and participate actively in society.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>What does education shape?</li>
+<li>How does education help citizens?</li>
+</ol>
+
+<button onclick="toggleAns(3)">Show Answer</button>
+
+<div id="ans3" class="answer">
+1️⃣ Personality and critical thinking ability.<br>
+2️⃣ Helps them make informed decisions and participate in society.
+</div>
+</div>
+
+</div>
+
 
 <script>
-
-const topics={
-
-/* ✅ RC = FULL COMPREHENSION PAGE */
-rc:{
-title:"Reading Comprehension Practice",
-desc:"Solve the passages below to improve reading speed, vocabulary, and understanding.",
-
-content:`
-
-<div class="section">
-<h3>Comprehension 1</h3>
-<p>Ravi studies every morning before school. This habit helps him stay confident in class.</p>
-<b>Q:</b> When does Ravi study?<br>
-<b>A:</b> Every morning.
-</div>
-
-<div class="section">
-<h3>Comprehension 2</h3>
-<p>The sun rises in the east and gives us light and warmth.</p>
-<b>Q:</b> Where does the sun rise?<br>
-<b>A:</b> In the east.
-</div>
-
-<div class="section">
-<h3>Comprehension 3</h3>
-<p>Meena loves planting trees because they provide oxygen and keep the environment clean.</p>
-<b>Q:</b> Why does Meena plant trees?<br>
-<b>A:</b> For oxygen and clean environment.
-</div>
-
-<div class="section">
-<h3>Comprehension 4</h3>
-<p>Reading books improves vocabulary, imagination, and knowledge.</p>
-<b>Q:</b> What does reading improve?<br>
-<b>A:</b> Vocabulary, imagination, and knowledge.
-</div>
-
-<div class="section">
-<h3>Comprehension 5</h3>
-<p>Water is essential for all living beings. Without water, life cannot survive.</p>
-<b>Q:</b> Why is water important?<br>
-<b>A:</b> Life cannot survive without water.
-</div>
-
-<div class="section">
-<h3>Comprehension 6</h3>
-<p>India is known for its diverse culture, languages, and traditions.</p>
-<b>Q:</b> What is India known for?<br>
-<b>A:</b> Diverse culture, languages, and traditions.
-</div>
-
-`
-},
-
-pc:{ title:"Passage Completion", desc:"Coming soon..." },
-syn:{ title:"Synonyms", desc:"Coming soon..." }
-
-};
-
-const params=new URLSearchParams(window.location.search);
-const id=params.get("id");
-
-if(topics[id]){
-document.getElementById("title").innerText=topics[id].title;
-document.getElementById("desc").innerText=topics[id].desc;
-document.getElementById("content").innerHTML=topics[id].content || "";
-}else{
-document.getElementById("title").innerText="Topic Not Found";
-document.getElementById("desc").innerText="Invalid ID in URL";
+function toggleAns(n){
+const el=document.getElementById("ans"+n);
+el.style.display = el.style.display==="block" ? "none" : "block";
 }
-
 </script>
 
 </body>
