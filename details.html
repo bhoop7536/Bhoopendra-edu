@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Topic Details</title>
+
+<style>
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+padding:40px;
+}
+.card{
+max-width:700px;
+margin:auto;
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+h1{margin-top:0}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+<h1 id="title">Loading...</h1>
+<p id="desc"></p>
+</div>
+
+<script>
+
+const topics={
+
+rc:{
+title:"Reading Comprehension",
+desc:"Practice long and short passages with questions on main idea, tone, vocabulary, inference, and comprehension skills. Improve your reading speed and accuracy for competitive exams."
+},
+
+pc:{
+title:"Passage Completion",
+desc:"Learn how to complete missing parts of a passage using grammar, logic, and contextual understanding."
+},
+
+syn:{
+title:"Synonyms",
+desc:"Practice important synonym questions commonly asked in competitive exams with explanations and examples."
+}
+
+};
+
+const params=new URLSearchParams(window.location.search);
+const id=params.get("id");
+
+if(topics[id]){
+document.getElementById("title").innerText=topics[id].title;
+document.getElementById("desc").innerText=topics[id].desc;
+}else{
+document.getElementById("title").innerText="Topic Not Found";
+document.getElementById("desc").innerText="Invalid ID in URL";
+}
+
+</script>
+
+</body>
+</html>
