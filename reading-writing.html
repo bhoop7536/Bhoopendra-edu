@@ -1,144 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Topic Details</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Reading & Writing — Topic Cards</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial;
-  background:linear-gradient(135deg,#0f172a,#08263a);
-  color:white;
-  padding:40px;
+:root{
+--bg1: linear-gradient(135deg,#0f172a 0%,#0b2545 50%, #05243a 100%);
+--accent: linear-gradient(90deg,#7c3aed,#06b6d4);
+--glass-border: rgba(255,255,255,0.08);
 }
-.box{
-  max-width:800px;
-  margin:auto;
-  background:rgba(255,255,255,0.05);
-  padding:30px;
-  border-radius:12px;
+*{box-sizing:border-box}
+body{margin:0;padding:32px;font-family:Inter;background:var(--bg1);color:#e6eef8}
+.container{max-width:1100px;margin:auto}
+header{display:flex;justify-content:space-between;margin-bottom:20px}
+.title{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:grid;place-items:center;font-weight:800;color:#021124;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:22px}
+
+.card{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.06);
+padding:18px;border-radius:14px;
+cursor:pointer;display:flex;flex-direction:column;gap:10px;
 }
-a.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:10px 16px;
-  background:linear-gradient(90deg,#7c3aed,#06b6d4);
-  color:black;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-}
+.card:hover{transform:translateY(-6px)}
+
+.kicker{font-size:12px}
+.link-row{margin-top:auto;display:flex;justify-content:space-between}
+.link-btn{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.2);text-decoration:none;color:white;font-weight:600}
+.link-btn.primary{background:var(--accent);color:#021124;border:0}
 </style>
 </head>
 
 <body>
 
-<div class="box">
-<h1 id="title">Loading...</h1>
-<p id="desc"></p>
+<div class="container">
 
-<a href="reading-writing.html" class="btn">⬅ Back</a>
+<header>
+<div class="title">
+<div class="logo">RW</div>
+<div>
+<h1>Reading & Writing — Topic Cards</h1>
+<p>Select a card to view short description and quick links for practice.</p>
+</div>
+</div>
+</header>
+
+<div id="grid" class="grid"></div>
+
 </div>
 
 <script>
 
-const topics = {
+const topics = [
+{id:'rc',type:'Reading',title:'Reading Comprehension',desc:'Practice long and short passages with questions on main idea, tone, vocabulary, and inference.',links:[{t:'Practice Passage',url:'#'}]},
+{id:'pc',type:'Reading',title:'Passage Completion',desc:'Complete missing lines in passages — tests coherence and vocabulary in context.',links:[{t:'Try Exercises',url:'#'}]},
+{id:'ct',type:'Reading',title:'Cloze Test',desc:'Multiple blanks in a passage; select the best word for each blank.',links:[{t:'Cloze Tests',url:'#'}]},
+{id:'sr',type:'Reading',title:'Sentence Rearrangement / Para Jumbles',desc:'Reorder sentences to form a coherent paragraph.',links:[{t:'Para Jumbles',url:'#'}]},
+{id:'syn',type:'Reading',title:'Synonyms & Antonyms in Context',desc:'Practice words with contextual synonyms and antonyms.',links:[{t:'Word Lists',url:'#'}]},
+{id:'inf',type:'Reading',title:'Inference Based Questions',desc:'Questions that require reading between the lines.',links:[{t:'Inference Drills',url:'#'}]},
+{id:'fv',type:'Reading',title:'Fact vs Opinion',desc:'Differentiate statements of fact from subjective opinion.',links:[{t:'Exercises',url:'#'}]},
+{id:'cr',type:'Reading',title:'Critical Reading',desc:'Analyze arguments, assumptions and evaluate evidence.',links:[{t:'Critical Passages',url:'#'}]}
+];
 
-rc:{
-title:"Reading Comprehension",
-desc:"Practice long and short passages with questions on main idea, tone, vocabulary, and inference."
-},
+const grid=document.getElementById('grid');
 
-pc:{
-title:"Passage Completion",
-desc:"Complete missing lines in passages — tests coherence and vocabulary in context."
-},
+function render(){
+grid.innerHTML='';
 
-ct:{
-title:"Cloze Test",
-desc:"Multiple blanks in a passage; select the best word for each blank."
-},
+topics.forEach(t=>{
 
-sr:{
-title:"Sentence Rearrangement / Para Jumbles",
-desc:"Reorder sentences to form a coherent paragraph."
-},
+const el=document.createElement('article');
+el.className='card';
 
-syn:{
-title:"Synonyms & Antonyms in Context",
-desc:"Practice words with contextual synonyms and antonyms."
-},
+el.innerHTML=`
+<span class="kicker">${t.type}</span>
+<h3>${t.title}</h3>
+<p>${t.desc}</p>
 
-inf:{
-title:"Inference Based Questions",
-desc:"Questions that require reading between the lines."
-},
+<div class="link-row">
+<div>ID: ${t.id}</div>
 
-fv:{
-title:"Fact vs Opinion",
-desc:"Differentiate statements of fact from subjective opinion."
-},
+<div>
+<a class="link-btn" href="details.html?id=${t.id}" onclick="event.stopPropagation()">Details</a>
+<a class="link-btn primary" href="${t.links[0].url}" onclick="event.stopPropagation()">Practice</a>
+</div>
 
-cr:{
-title:"Critical Reading",
-desc:"Analyze arguments, assumptions and evaluate evidence."
-},
+</div>
+`;
 
-ew:{
-title:"Essay Writing",
-desc:"Structure, thesis, introduction-body-conclusion and practice prompts."
-},
+el.addEventListener('click',(e)=>{
+if(e.target.tagName!=="A"){
+window.open("details.html?id="+t.id,"_blank");
+}
+});
 
-lw:{
-title:"Letter Writing",
-desc:"Formats for formal letters, applications and informal letters."
-},
+grid.appendChild(el);
 
-rw:{
-title:"Report Writing",
-desc:"How to write clear and concise reports."
-},
+});
 
-nw:{
-title:"Notice Writing",
-desc:"Short public notices: format and examples."
-},
-
-aw:{
-title:"Article Writing",
-desc:"Structure of articles and conclusion writing."
-},
-
-sw:{
-title:"Story Writing",
-desc:"Plot, character, setting and dialogues."
-},
-
-pw:{
-title:"Precis Writing",
-desc:"Shortening long passages while keeping main ideas intact."
-},
-
-dw:{
-title:"Dialogue Writing",
-desc:"Writing realistic dialogues for plays and stories."
 }
 
-};
-
-
-// URL se id lena
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
-
-if(topics[id]){
-document.getElementById("title").innerText = topics[id].title;
-document.getElementById("desc").innerText = topics[id].desc;
-}else{
-document.getElementById("title").innerText="Topic not found";
-}
+render();
 
 </script>
 
