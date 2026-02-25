@@ -5,21 +5,52 @@
 <title>Topic Details</title>
 
 <style>
+
 body{
-font-family:Arial;
-background:#0f172a;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
 padding:40px;
+margin:0;
 }
+
 .card{
-max-width:700px;
+max-width:850px;
 margin:auto;
 background:#1e293b;
-padding:30px;
-border-radius:12px;
-box-shadow:0 0 20px rgba(0,0,0,.3);
+padding:35px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
-h1{margin-top:0}
+
+h1{
+margin-top:0;
+font-size:32px;
+color:#38bdf8;
+}
+
+h3{
+color:#facc15;
+margin-top:30px;
+}
+
+p{
+line-height:1.7;
+font-size:17px;
+}
+
+ol{
+padding-left:20px;
+}
+
+.section{
+background:#0f172a;
+padding:18px;
+margin-top:20px;
+border-radius:10px;
+border-left:4px solid #38bdf8;
+}
+
 </style>
 
 </head>
@@ -35,43 +66,70 @@ h1{margin-top:0}
 
 const topics={
 
+compression:{
+title:"Reading Comprehension Practice",
+desc:"Solve the passages below to improve reading speed, vocabulary, and understanding for competitive exams.",
+
+content:`
+
+<div class="section">
+<h3>Comprehension 1</h3>
+<p>Ravi studies every morning before school. This habit helps him stay confident in class.</p>
+<b>Q:</b> When does Ravi study?<br>
+<b>A:</b> Every morning.
+</div>
+
+<div class="section">
+<h3>Comprehension 2</h3>
+<p>The sun rises in the east and gives us light and warmth.</p>
+<b>Q:</b> Where does the sun rise?<br>
+<b>A:</b> In the east.
+</div>
+
+<div class="section">
+<h3>Comprehension 3</h3>
+<p>Meena loves planting trees because they provide oxygen and keep the environment clean.</p>
+<b>Q:</b> Why does Meena plant trees?<br>
+<b>A:</b> To keep the environment clean and get oxygen.
+</div>
+
+<div class="section">
+<h3>Comprehension 4</h3>
+<p>Reading books improves vocabulary, imagination, and knowledge.</p>
+<b>Q:</b> What does reading improve?<br>
+<b>A:</b> Vocabulary, imagination, and knowledge.
+</div>
+
+<div class="section">
+<h3>Comprehension 5</h3>
+<p>Water is essential for all living beings. Without water, life cannot survive.</p>
+<b>Q:</b> Why is water important?<br>
+<b>A:</b> Because life cannot survive without it.
+</div>
+
+<div class="section">
+<h3>Comprehension 6</h3>
+<p>India is known for its diverse culture, languages, and traditions.</p>
+<b>Q:</b> What is India known for?<br>
+<b>A:</b> Diverse culture, languages, and traditions.
+</div>
+
+`
+},
+
 rc:{
-title:"Reading Comprehension",
-desc:"Practice long and short passages with questions on main idea, tone, vocabulary, inference, and comprehension skills."
+title:"Reading Skills Intro",
+desc:"General introduction to reading comprehension."
 },
 
 pc:{
 title:"Passage Completion",
-desc:"Learn how to complete missing parts of a passage using grammar, logic, and contextual understanding."
+desc:"Learn how to complete missing parts of passages."
 },
 
 syn:{
 title:"Synonyms",
-desc:"Practice important synonym questions commonly asked in competitive exams."
-},
-
-compression:{   /* ✅ NOW INSIDE topics */
-title:"Reading Comprehension",
-desc:"Reading Comprehension helps you understand passages and answer questions.",
-
-content:`
-<h3>Sample Passage</h3>
-<p>Ravi loves reading books every day. He visits the library after school and spends at least one hour reading stories, science articles, and history books. Reading improves his knowledge and vocabulary.</p>
-
-<h3>Questions</h3>
-<ol>
-<li>Where does Ravi go after school?</li>
-<li>How much time does he spend reading?</li>
-<li>What does reading improve?</li>
-</ol>
-
-<h3>Answers</h3>
-<ol>
-<li>He goes to the library.</li>
-<li>At least one hour.</li>
-<li>Knowledge and vocabulary.</li>
-</ol>
-`
+desc:"Practice synonym questions."
 }
 
 };
