@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Reading Comprehension</title>
+
+<style>
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+padding:40px;margin:0;
+}
+.card{
+max-width:900px;margin:auto;background:#1e293b;
+padding:35px;border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+h1{color:#38bdf8;margin-top:0}
+.section{
+background:#0f172a;padding:20px;margin-top:25px;
+border-radius:10px;border-left:4px solid #38bdf8;
+}
+h3{color:#facc15}
+button{
+margin-top:10px;padding:8px 16px;
+background:#38bdf8;border:none;border-radius:6px;
+cursor:pointer;font-weight:bold;
+}
+.answer{
+display:none;
+margin-top:12px;
+background:#020617;
+padding:15px;
+border-radius:8px;
+border:1px solid #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1> Reading Comprehension</h1>
+
+<!-- COMPREHENSION 1 -->
+<div class="section">
+<h3>Passage 1</h3>
+
+<p>
+Hard work is the key to success. People who work sincerely and patiently
+  achieve their dreams. Many great scientists, leaders, and athletes have 
+  reached great heights because of their hard work. Luck may help sometimes,
+  but success mainly depends on dedication and effort.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>What is the key to success?</li>
+<li>Who achieve their dreams?</li>
+</ol>
+
+<button onclick="toggleAns(1)">Show Answer</button>
+
+<div id="ans1" class="answer">
+1️⃣Hard work is the key to success.<br>
+2️⃣People who work sincerely and patiently achieve their dreams.
+</div>
+</div>
+
+
+<!-- COMPREHENSION 2 -->
+<div class="section">
+<h3>Passage 2</h3>
+
+<p>
+Cleanliness is essential for a healthy life. A clean environment protects
+  us from diseases and keeps our surroundings pleasant. We should keep our 
+  homes, schools, and public places clean. Throwing garbage in dustbins and 
+  maintaining hygiene are good habits that everyone should follow.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li></li>Why is cleanliness important?</li>
+<li></li>What does a clean environment do?</li>
+</ol>
+
+<button onclick="toggleAns(2)">Show Answer</button>
+
+<div id="ans2" class="answer">
+1️⃣ It is important for a healthy life.<br>
+2️⃣ It protects us from diseases.
+</div>
+</div>
+
+
+<!-- COMPREHENSION 3 -->
+<div class="section">
+<h3>Passage 3</h3>
+
+<p>
+Reading books is a good habit that improves knowledge and imagination.
+  Books introduce us to new ideas, cultures, and experiences. Students who
+  read regularly develop better vocabulary and understanding. Reading also
+  improves concentration and creativity.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li></li>Why is reading a good habit?</li>
+<li>What do books introduce us to?</li>
+</ol>
+
+<button onclick="toggleAns(3)">Show Answer</button>
+
+<div id="ans3" class="answer">
+1️⃣It improves knowledge and imagination.<br>
+2️⃣ New ideas, cultures, and experiences.
+</div>
+</div>
+  <!-- COMPREHENSION 4 -->
+<div class="section">
+<h3>Passage 4</h3>
+
+<p style="color:#FFD700;  word-spacing: 10px; "><strong>
+In recent years, technology has transformed the way people access information and
+  communicate with one another. While this digital revolution has increased efficiency
+  and connectivity, it has also created new challenges related to privacy, misinformation, 
+  and social isolation. Many experts argue that excessive dependence on technology may weaken 
+  critical thinking skills, as individuals often rely on quick online searches rather than deep analysis.
+
+However, others believe that technology, when used responsibly, can enhance learning, promote innovation,
+  and democratize knowledge by making educational resources available to a wider population. The real issue,
+  therefore, is not technology itself but how society chooses to use and regulate it. Balancing technological
+  advancement with ethical responsibility remains one of the most important challenges of the modern world.</strong></p>
+<p>  हाल के वर्षों में, तकनीक ने लोगों के जानकारी प्राप्त करने और एक-दूसरे से संवाद करने के तरीके को बदल दिया है। जहाँ इस डिजिटल क्रांति ने
+  कार्यकुशलता और संपर्क बढ़ाया है, वहीं इसने गोपनीयता, गलत सूचना और सामाजिक अलगाव से जुड़ी नई चुनौतियाँ भी पैदा की हैं। कई विशेषज्ञों 
+  का मानना है कि तकनीक पर अत्यधिक निर्भरता आलोचनात्मक सोच की क्षमता को कमजोर कर सकती है, क्योंकि लोग गहराई से विश्लेषण करने के
+  बजाय तुरंत ऑनलाइन खोजों पर निर्भर हो जाते हैं।
+
+हालाँकि, अन्य लोगों का विश्वास है कि तकनीक, जब जिम्मेदारी से उपयोग की जाए, तो सीखने को बेहतर बना सकती है, नवाचार को बढ़ावा दे सकती है 
+  और शैक्षणिक संसाधनों को अधिक लोगों तक उपलब्ध कराकर ज्ञान का लोकतंत्रीकरण कर सकती है। इसलिए वास्तविक समस्या तकनीक स्वयं नहीं है, बल्
+  कि यह है कि समाज इसे कैसे उपयोग और नियंत्रित करता है। तकनीकी प्रगति और नैतिक जिम्मेदारी के बीच संतुलन बनाना आधुनिक दुनिया की सबसे महत्वपूर्ण चुनौतियों में से एक बना हुआ है।
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>1. What is the main idea of the passage?
+इस गद्यांश का मुख्य विचार क्या है?</li>
+<li>2. According to some experts, excessive use of technology may:
+कुछ विशेषज्ञों के अनुसार, तकनीक का अत्यधिक उपयोग:</li>
+</ol>
+
+<button onclick="toggleAns(4)">Show Answer</button>
+
+<div id="ans4" class="answer">
+1️⃣ Technology has both benefits and challenges
+  तकनीक के लाभ भी हैं और चुनौतियाँ भी।<br>
+2️⃣Weaken critical thinking skills
+  आलोचनात्मक सोचने की क्षमता को कमजोर करना
+</div>
+</div><!-- COMPREHENSION 5 -->
+<div class="section">
+<h3>Passage 5</h3>
+
+<p style="color:#FFD700;"><strong>
+In modern societies, cities are expanding at an unprecedented rate as people migrate from rural areas in 
+  search of better employment, education, and healthcare. Urbanization has contributed significantly to
+  economic growth by creating opportunities for industries, businesses, and innovation. Well-planned cities
+  can provide efficient transport systems, better infrastructure, and improved living standards.
+
+However, rapid and unplanned urban growth often leads to overcrowding, pollution, housing shortages, and 
+  on public services. Slums and informal settlements grow when affordable housing is unavailable, increasing
+  inequality and social tensions. Environmental degradation also becomes a serious concern as green spaces 
+  shrink and waste management systems struggle to cope with growing populations.
+
+Therefore, sustainable urban planning, investment in public infrastructure, and inclusive housing policies
+  are essential to ensure that urbanization benefits society as a whole rather than creating long-term social and environmental problems.</strong></p>
+ <p> आधुनिक समाजों में शहर अभूतपूर्व गति से फैल रहे हैं क्योंकि लोग बेहतर रोजगार, शिक्षा और स्वास्थ्य सेवाओं की खोज में ग्रामीण क्षेत्रों से शहरों 
+  की ओर पलायन कर रहे हैं। शहरीकरण ने उद्योगों, व्यवसायों और नवाचार के लिए अवसर पैदा करके आर्थिक विकास में महत्वपूर्ण योगदान दिया 
+  है। सुव्यवस्थित शहर कुशल परिवहन व्यवस्था, बेहतर आधारभूत संरचना और उन्नत जीवन स्तर प्रदान कर सकते हैं।
+
+हालाँकि, तेज़ और अव्यवस्थित शहरी विकास अक्सर भीड़भाड़, प्रदूषण, आवास की कमी और सार्वजनिक सेवाओं पर दबाव जैसी समस्याओं 
+  को जन्म देता है। जब किफायती आवास उपलब्ध नहीं होता, तो झुग्गियाँ और अनौपचारिक बस्तियाँ बढ़ने लगती हैं, जिससे असमानता और
+  सामाजिक तनाव में वृद्धि होती है।
+
+पर्यावरणीय क्षरण भी एक गंभीर चिंता बन जाता है क्योंकि हरित क्षेत्र घटते जाते हैं और कचरा प्रबंधन प्रणाली बढ़ती जनसंख्या के दबाव को संभालने
+  में संघर्ष करती है। इसलिए, सतत शहरी योजना, सार्वजनिक अवसंरचना में निवेश और समावेशी आवास नीतियाँ आवश्यक हैं, ताकि शहरीकरण 
+  पूरे समाज के लिए लाभकारी सिद्ध हो सके और दीर्घकालिक सामाजिक व पर्यावरणीय समस्याएँ उत्पन्न न हों।
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>What is the main theme of the passage?
+(गद्यांश का मुख्य विषय क्या है?)</li>
+<li>Why do people move to cities?
+(लोग शहरों की ओर क्यों जाते हैं?)</li>
+</ol>
+
+<button onclick="toggleAns(5)">Show Answer</button>
+
+<div id="ans5" class="answer">
+1️⃣Causes and effects of urbanizationशहरीकरण के कारण और प्रभाव<br>
+2️⃣For better jobs, education, and healthcareबेहतर रोजगार, शिक्षा और स्वास्थ्य सेवा के लिए
+</div>
+</div><!-- COMPREHENSION 6-->
+<div class="section">
+<h3>Passage 6</h3>
+
+<p>
+Discipline plays an important role in the life of every person. A disciplined
+  person knows how to manage time and follow rules. Students who are disciplined 
+  usually perform better in studies and other activities. Discipline helps people 
+  achieve their goals and become successful in life. Without discipline, life becomes
+  disorganized and difficult.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>Why is discipline important in life?</li>
+<li>What do disciplined students usually achieve?</li>
+</ol>
+
+<button onclick="toggleAns(6)">Show Answer</button>
+
+<div id="ans6" class="answer">
+1️⃣Discipline helps people manage time and follow rules.<br>
+2️⃣ They perform better in studies and activities.
+</div>
+</div>
+  <!-- COMPREHENSION 7 -->
+<div class="section">
+<h3>Passage 7</h3>
+
+<p style="color:#FFD700;"><strong>
+Urbanization is one of the most significant transformations of the modern world. 
+  Over the past few decades, millions of people have migrated from rural areas to
+  cities in search of better employment, education, and healthcare facilities. Cities 
+  are often seen as centers of economic growth and innovation. They provide access to
+  industries, corporate offices, and advanced infrastructure. As a result, urban areas
+  contribute significantly to a nation’s GDP.
+
+However, rapid urbanization also creates several challenges. The increasing population in
+  cities leads to overcrowding, traffic congestion, and pressure on housing facilities. Many 
+  migrants are forced to live in slums due to the high cost of living. Environmental problems
+  such as air and water pollution also intensify as industries and vehicles increase. Moreover,
+  the gap between the rich and the poor becomes more visible in urban settings.
+
+To manage these issues, governments are focusing on sustainable urban planning. Smart city projects,
+  improved public transportation, and affordable housing schemes are being introduced to ensure
+  balanced development. Proper planning and community participation can help cities grow 
+  without compromising environmental and social well-being.</strong></p>
+  <p>शहरीकरण आधुनिक विश्व की सबसे महत्वपूर्ण प्रक्रियाओं में से एक है। पिछले कुछ दशकों में लाखों लोग बेहतर रोजगार, शिक्षा 
+  और स्वास्थ्य सुविधाओं की खोज में ग्रामीण क्षेत्रों से शहरों की ओर पलायन कर चुके हैं। शहरों को आर्थिक विकास और नवाचार 
+  के केंद्र के रूप में देखा जाता है। यहाँ उद्योग, कॉर्पोरेट कार्यालय और उन्नत आधारभूत संरचना उपलब्ध होती है। इसी कारण शहर
+  ी क्षेत्र किसी भी देश के सकल घरेलू उत्पाद (GDP) में महत्वपूर्ण योगदान देते हैं।
+
+हालाँकि, तीव्र शहरीकरण कई चुनौतियाँ भी उत्पन्न करता है। शहरों में जनसंख्या वृद्धि के कारण भीड़भाड़, यातायात जाम और आवास
+  की कमी जैसी समस्याएँ बढ़ जाती हैं। जीवन-यापन की ऊँची लागत के कारण अनेक प्रवासी झुग्गी-झोपड़ियों में रहने को मजबूर हो 
+  जाते हैं। इसके अतिरिक्त, उद्योगों और वाहनों की बढ़ती संख्या से वायु और जल प्रदूषण भी बढ़ता है। शहरी क्षेत्रों में अमीर और गरीब के
+  बीच का अंतर भी अधिक स्पष्ट दिखाई देता है।
+
+इन समस्याओं से निपटने के लिए सरकारें सतत शहरी योजना (Sustainable Urban Planning) पर जोर दे रही हैं। स्मार्ट सिटी परियोजनाएँ,
+  बेहतर सार्वजनिक परिवहन और किफायती आवास योजनाएँ लागू की जा रही हैं, ताकि संतुलित विकास सुनिश्चित किया जा सके। उचित योजना 
+  और जनभागीदारी के माध्यम से शहरों का विकास पर्यावरण और सामाजिक संतुलन को बनाए रखते हुए किया जा सकता है।
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>Why do people migrate from rural areas to cities?</li>
+<li>How do cities contribute to a nation’s economy?</li>
+</ol>
+
+<button onclick="toggleAns(7)">Show Answer</button>
+
+<div id="ans7" class="answer">
+1️⃣ Long-term environmental damage.<br>
+2️⃣ Industrial progress and ecological protection.
+</div>
+</div>
+  <!-- COMPREHENSION 8 -->
+<div class="section">
+<h3>Passage 8</h3>
+
+<p>
+Many people believe that success comes only from luck. However,
+  this is not true. Success usually comes from hard work, dedication, 
+  and continuous learning. A person who keeps trying even after failure
+  often achieves his goals. History is full of examples of people
+  who faced many difficulties but never gave up. Their determination
+  and patience helped them reach great heights. Therefore, it is 
+  important to believe in oneself and work hard to achieve success.</p><P>
+  बहुत से लोग मानते हैं कि सफलता केवल भाग्य से मिलती है।
+लेकिन यह सही नहीं है। सफलता आमतौर पर कड़ी मेहनत, समर्पण और निरंतर सीखने से मिलती है।
+
+जो व्यक्ति असफलता के बाद भी प्रयास करता रहता है, वह अक्सर अपने लक्ष्यों को प्राप्त कर लेता है। 
+  इतिहास ऐसे लोगों के उदाहरणों से भरा पड़ा है जिन्होंने अनेक कठिनाइयों का सामना किया, लेकिन कभी हार नहीं मानी।
+
+उनका दृढ़ निश्चय और धैर्य उन्हें महान ऊँचाइयों तक पहुँचाने में सहायक बना। इसलिए सफलता प्राप्त करने के लिए स्वयं
+  पर विश्वास करना और कड़ी मेहनत करना बहुत महत्वपूर्ण है।
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>What is one of the best habits a person can develop?</li>
+<li>What do books provide?</li>
+</ol>
+
+<button onclick="toggleAns(8)">Show Answer</button>
+
+<div id="ans8" class="answer">
+1️⃣Reading books is one of the best habits.<br>
+2️⃣Books provide knowledge and improve vocabulary.
+</div>
+</div>
+  <!-- COMPREHENSION 9 -->
+<div class="section">
+<h3>Passage 9</h3>
+
+<p>
+Trees are very important for life on Earth. They give us oxygen
+  to breathe and absorb carbon dioxide from the air. Trees also 
+  provide food, wood, medicine, and shelter to many animals and
+  birds. In villages and cities, trees help in keeping the environment
+  cool and reduce pollution.
+Unfortunately, many forests are being cut down for buildings, roads,
+  and industries. This causes serious environmental problems like global
+  warming and loss of wildlife. Therefore, it is very important for us to 
+  plant more trees and protect forests for the future.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>Why are trees important for life on Earth?</li>
+<li>What do trees provide to animals and birds?</li>
+</ol>
+
+<button onclick="toggleAns(9)">Show Answer</button>
+
+<div id="ans9" class="answer">
+1️⃣ Trees give us oxygen and absorb carbon dioxide.<br>
+2️⃣ Trees provide food, shelter, and habitat to animals and birds.
+</div>
+</div>
+  <!-- COMPREHENSION 10 -->
+<div class="section">
+<h3>Passage 10</h3>
+
+<p>
+The internet has become an important part of our daily life
+  . It helps us communicate with people around the world, learn
+  new things, and access information quickly. Students use the 
+  internet for studying, watching educational videos, and completing assignments.
+
+However, excessive use of the internet can also cause problems. 
+  Spending too much time online may affect health and reduce physical
+  activity. Therefore, it is important to use the internet wisely and
+  maintain a balance between online and offline activities.
+</p>
+
+<b>Questions:</b>
+<ol>
+<li>Why is the internet important today?</li>
+<li>How do students use the internet?</li>
+</ol>
+
+<button onclick="toggleAns(10)">Show Answer</button>
+
+<div id="ans10" class="answer">
+1️⃣ It helps communication and provides information quickly.<br>
+2️⃣ Students use it for studying and watching educational videos.
+</div>
+</div>
+
+
+</div>
+
+<script>
+function toggleAns(n){
+const el=document.getElementById("ans"+n);
+el.style.display = el.style.display==="block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
